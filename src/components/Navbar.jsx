@@ -3,71 +3,46 @@ import { NavLink, useLocation } from 'react-router-dom'
 import './Navbar.css'
 
 const links = [
-  { to: '/about',      label: 'About' },
-  { to: '/experience', label: 'Experience' },
-  { to: '/projects',   label: 'Projects' },
-  { to: '/skills',     label: 'Skills' },
-  { to: '/contact',    label: 'Contact' },
+  { num: '01', to: '/experience', label: 'Experience' },
+  { num: '02', to: '/projects',   label: 'Work' },
+  { num: '03', to: '/about',      label: 'About' },
+  { num: '04', to: '/contact',    label: 'Contact' },
 ]
 
 export default function Navbar() {
-  const [scrolled, setScrolled]   = useState(false)
-  const [menuOpen, setMenuOpen]   = useState(false)
-  const location                  = useLocation()
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50)
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  const [menuOpen, setMenuOpen] = useState(false)
+  const location = useLocation()
 
   useEffect(() => { setMenuOpen(false) }, [location])
 
   return (
-    <header className={`navbar ${scrolled ? 'nb-scrolled' : ''}`}>
-      <div className="nb-inner">
+    <header className="navbar">
+      <div className="container nav-inner">
 
-        {/* Logo */}
-        <NavLink to="/" className="nb-logo">
-          <span className="nb-monogram">SM</span>
-          <span className="nb-sep" />
-          <span className="nb-full">Shreyansh Mathur</span>
+        <NavLink to="/" className="nav-brand">
+          <span className="nav-brand-name">Shreyansh <em>Mathur</em></span>
+          <span className="nav-brand-role">Strategy · PwC India</span>
         </NavLink>
 
-        {/* Desktop links */}
-        <nav className="nb-links">
+        <nav className="nav-links">
           {links.map(l => (
             <NavLink
               key={l.to}
               to={l.to}
-              className={({ isActive }) => `nb-link ${isActive ? 'nb-active' : ''}`}
+              className={({ isActive }) => `nav-link${isActive ? ' is-active' : ''}`}
             >
-              {l.label}
+              <span className="nav-num">{l.num}</span>
+              <span>{l.label}</span>
             </NavLink>
           ))}
+          <span className="nav-status">
+            <span className="nav-dot" />
+            Open to roles
+          </span>
         </nav>
 
-        {/* CTA group */}
-        <div className="nb-cta-group">
-          <a
-            href="/Shreyansh-Mathur-Resume .pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="nb-resume"
-          >
-            Resume ↓
-          </a>
-          <a
-            href="mailto:shreyanshmathur12@gmail.com"
-            className="nb-cta"
-          >
-            Hire Me
-          </a>
-        </div>
-
-        {/* Hamburger */}
         <button
-          className={`nb-ham ${menuOpen ? 'open' : ''}`}
+          className={`nav-ham${menuOpen ? ' open' : ''}`}
           onClick={() => setMenuOpen(v => !v)}
           aria-label="Toggle menu"
         >
@@ -75,14 +50,13 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
-      <div className={`nb-mobile ${menuOpen ? 'open' : ''}`}>
-        <NavLink to="/" className="nb-mob-link" end>Home</NavLink>
+      <div className={`nav-mobile${menuOpen ? ' open' : ''}`}>
+        <NavLink to="/" className="nav-mob-link" end>Home</NavLink>
         {links.map(l => (
-          <NavLink key={l.to} to={l.to} className="nb-mob-link">{l.label}</NavLink>
+          <NavLink key={l.to} to={l.to} className="nav-mob-link">{l.label}</NavLink>
         ))}
-        <a href="mailto:shreyanshmathur12@gmail.com" className="nb-mob-cta">
-          Hire Me ↗
+        <a href="mailto:shreyanshmathur12@gmail.com" className="nav-mob-cta">
+          Get in touch ↗
         </a>
       </div>
     </header>

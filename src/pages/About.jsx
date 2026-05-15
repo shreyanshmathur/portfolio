@@ -1,23 +1,55 @@
 import { useReveal } from '../hooks/useReveal'
-import { Link } from 'react-router-dom'
 import './About.css'
 
-const certifications = [
-  { org: 'Anthropic',  title: 'AI Fluency Framework & Foundations',  color: '#C9943A' },
-  { org: 'Google',     title: 'Generative AI Leader Certification',   color: '#4A90E2' },
-  { org: 'Yale / Coursera', title: 'Financial Markets',              color: '#06B6D4' },
-  { org: 'BCG',        title: 'Consulting Simulation',               color: '#9B59B6' },
-  { org: 'JPMorgan',   title: 'Investment Banking Simulation',       color: '#E8B95F' },
-  { org: 'Coursera',   title: 'Business Analysis & Process Mgmt',   color: '#E05050' },
+const facts = [
+  ['Role',       'Associate, Strategy'],
+  ['Firm',       'PwC India'],
+  ['Based',      'Mumbai, India'],
+  ['Education',  'B.Tech CS, VIT (2025)'],
+  ['Focus',      'GCC · AI · Operating models'],
+  ['Status',     'Open to opportunities'],
 ]
 
-const facts = [
-  { icon: '◈', label: 'Role',         value: 'Strategy Associate' },
-  { icon: '◉', label: 'Company',      value: 'PwC India' },
-  { icon: '⊕', label: 'Location',     value: 'Mumbai, India' },
-  { icon: '◫', label: 'Education',    value: 'B.Tech CS, VIT' },
-  { icon: '⬡', label: 'Speciality',   value: 'GCC · AI · Full-Stack' },
-  { icon: '◆', label: 'Available',    value: 'Open to opportunities' },
+const capabilities = [
+  {
+    heading: 'Strategy',
+    items: [
+      'GCC operating model design',
+      'Market entry and capability mapping',
+      'AI transformation strategy',
+      'IT operating model redesign',
+      'C-suite stakeholder management',
+    ],
+  },
+  {
+    heading: 'Delivery',
+    items: [
+      'Lean Six Sigma process design',
+      'Agile programme management',
+      'KPI design and benchmarking',
+      'Power BI / Tableau dashboards',
+      'Financial modelling (DCF, valuation)',
+    ],
+  },
+  {
+    heading: 'Technical',
+    items: [
+      'Python — automation, ML, pipelines',
+      'React / TypeScript prototypes',
+      'LLM integration (Groq, OpenAI)',
+      'SAP FICO/MM advanced user',
+      'SQL, Excel VBA workflows',
+    ],
+  },
+]
+
+const certifications = [
+  ['Anthropic',       'AI Fluency Framework'],
+  ['Google',          'Generative AI Leader'],
+  ['Yale',            'Financial Markets'],
+  ['BCG',             'Consulting simulation'],
+  ['JPMorgan',        'Investment Banking simulation'],
+  ['Coursera',        'Business Analysis and Process Mgmt'],
 ]
 
 export default function About() {
@@ -28,204 +60,131 @@ export default function About() {
   return (
     <main className="page-wrap">
 
-      {/* ── PAGE HEADER ───────────────────────────── */}
-      <section className="about-hero">
-        <div className="ab-bg">
-          <div className="ab-orb ab-orb1" />
-          <div className="ab-orb ab-orb2" />
-        </div>
-        <div className="ab-hero-wm" aria-hidden="true">ABOUT</div>
-        <div className="container ab-hero-inner">
-          <div className="ab-hero-text">
-            <span className="eyebrow">01 / About</span>
-            <h1 className="ab-title">
-              The<br />
-              <em>Strategist</em><br />
-              <span className="outline-text">Who Builds.</span>
-            </h1>
-            <p className="ab-tagline">
-              Management consultant at PwC with a CS background. I design operating models,
-              lead AI transformations, and deliver results from the C-suite down to ground-level execution.
-              The technical edge isn't the story; it's what makes the strategy more credible.
-            </p>
-          </div>
-          <div className="ab-hero-portrait">
-            <div className="ab-portrait-frame">
-              <img src="/shreyansh.jpg" alt="Shreyansh Mathur" className="ab-portrait-img" />
-              <div className="ab-portrait-label">
-                <span className="eyebrow">Shreyansh Mathur</span>
-                <span className="ab-portrait-role">Strategy Associate, PwC</span>
+      {/* ── ABOUT HERO ─────────────────────────── */}
+      <div className="about-hero">
+        <div className="container">
+          <div className="ah-grid">
+            <div className="ah-portrait-col">
+              <div className="ah-portrait">
+                <img src="/shreyansh.jpg" alt="Shreyansh Mathur" />
+              </div>
+              <div className="ah-portrait-meta">
+                <span className="ah-pm-loc">Mumbai, India</span>
+                <span className="ah-pm-loc">PwC India</span>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── PULL QUOTE ────────────────────────────── */}
-      <div className="ab-quote-band" ref={useReveal()}>
-        <div className="container">
-          <blockquote className="ab-quote reveal">
-            <span className="abq-mark">"</span>
-            The rarest hire in consulting isn't the best strategist
-            or the best analyst. It's the one who can tell you
-            what to build <em>and then build it.</em>
-            <span className="abq-mark">"</span>
-          </blockquote>
-        </div>
-      </div>
-
-      {/* ── STORY ─────────────────────────────────── */}
-      <section className="ab-story section" ref={r1}>
-        <div className="container">
-          <div className="abs-grid">
-            <div className="abs-left">
-              <div className="reveal">
-                <span className="eyebrow">My Story</span>
-                <h2 className="section-heading" style={{ marginTop: 20 }}>
-                  From GCC strategy<br />
-                  <span>to ground-level delivery.</span>
-                </h2>
+            <div className="ah-text">
+              <div className="ah-top">
+                <span className="eyebrow">03 / About</span>
               </div>
-              <div className="abs-clients reveal d3">
-                <span className="eyebrow" style={{ marginBottom: 16 }}>Experience at</span>
-                {['PwC', 'EY', 'BelleVidCo'].map(c => (
-                  <span key={c} className="abs-client">{c}</span>
+              <h1 className="ah-title">
+                The strategist<br />
+                <em>who builds.</em>
+              </h1>
+              <p className="ah-kicker">
+                Management consultant at PwC with a CS background. Operating models,
+                AI transformations, and the prototypes that prove the work.
+              </p>
+              <div className="ah-quick">
+                {facts.slice(0, 3).map(([k, v]) => (
+                  <div key={k}>
+                    <span className="ah-q-k">{k}</span>
+                    <span className="ah-q-v">{v}</span>
+                  </div>
                 ))}
               </div>
             </div>
-            <div className="abs-right reveal-r d2">
+          </div>
+        </div>
+      </div>
+
+      {/* ── STORY ──────────────────────────────── */}
+      <section className="section" ref={r1}>
+        <div className="container">
+          <div className="section-head">
+            <div className="reveal">
+              <span className="eyebrow">My story</span>
+            </div>
+            <h2 className="reveal d2">From GCC strategy<br /><em>to ground-level delivery.</em></h2>
+          </div>
+          <div className="about-grid">
+            <div className="about-prose reveal d2">
               <p>
-                I came into consulting through an unconventional path: a Computer Science degree at VIT, where I was more interested in how organisations work than how code runs. That led me to EY's GCC Research team, where I designed an AI-powered sales pipeline that cut manual prospecting by 75% across four city offices.
+                Computer Science at VIT, but I was always more interested in how organisations
+                work than how code runs. That curiosity moved me into EY's GCC Research team,
+                where I shipped an AI sales pipeline that cut manual prospecting by 75%
+                across four city offices.
               </p>
               <p>
-                I then co-founded BelleVidCo, delivering operational systems for clients in logistics, fashion, and private equity. Running client engagements end-to-end, from scoping to delivery, taught me what slides alone can't: that strategy is only as good as the implementation plan behind it.
+                I co-founded BelleVidCo, running end-to-end engagements for clients in
+                logistics, fashion, and PE advisory. That taught me what slides alone cannot:
+                strategy is only as good as the implementation behind it.
               </p>
               <p>
-                At PwC I've led GCC strategy for a global FMCG client (scaling an India Tech Hub from 27 to 108 FTEs), redesigned the IT operating model for a national cement leader across 15+ states, co-led a national AI Accelerator that shipped 12 enterprise tools, and launched an AI helpdesk that cut review cycles by 30%.
+                At PwC I lead GCC strategy for a global FMCG client, redesign IT operating
+                models for national cement, co-lead a national AI Accelerator, and ship
+                the prototypes that prove every recommendation.
               </p>
-              <p>
-                The CS background means I can pressure-test every AI recommendation I make and prototype the tool that proves it. For a consulting client, that's the difference between a roadmap and a result.
-              </p>
-              <div style={{ marginTop: 32 }}>
-                <Link to="/experience" className="btn-primary">See My Experience ↗</Link>
-              </div>
+            </div>
+            <div className="about-facts reveal d3">
+              {facts.map(([k, v]) => (
+                <div key={k} className="about-fact">
+                  <span className="k">{k}</span>
+                  <span className="v">{v}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── QUICK FACTS ───────────────────────────── */}
-      <section className="ab-facts" ref={r2}>
+      {/* ── CAPABILITIES ───────────────────────── */}
+      <section className="section band" ref={r2}>
         <div className="container">
-          <div className="abf-grid">
-            {facts.map((f, i) => (
-              <div key={i} className={`abf-item reveal d${i + 1}`}>
-                <span className="abf-icon">{f.icon}</span>
-                <div>
-                  <span className="abf-label">{f.label}</span>
-                  <span className="abf-value">{f.value}</span>
-                </div>
+          <div className="section-head">
+            <div className="reveal">
+              <span className="eyebrow">Capabilities</span>
+            </div>
+            <h2 className="reveal d2">Consulting depth.<br /><em>Technical credibility.</em></h2>
+          </div>
+          <div className="cap-grid">
+            {capabilities.map((c, i) => (
+              <div key={i} className={`cap-col reveal d${i + 2}`}>
+                <h3 className="cap-heading">{c.heading}</h3>
+                <ul className="cap-list">
+                  {c.items.map((item, j) => <li key={j}>{item}</li>)}
+                </ul>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── DUAL IDENTITY ─────────────────────────── */}
-      <section className="ab-dual section" ref={r3}>
+      {/* ── EDUCATION + CERTS ──────────────────── */}
+      <section className="section" ref={r3}>
         <div className="container">
-          <div className="abd-header reveal">
-            <span className="eyebrow">What sets me apart</span>
-            <h2 className="section-heading" style={{ marginTop: 20 }}>
-              Consulting depth.<br />
-              <span>Technical credibility.</span>
-            </h2>
+          <div className="section-head">
+            <div className="reveal">
+              <span className="eyebrow">Credentials</span>
+            </div>
+            <h2 className="reveal d2">Education and<br /><em>certifications</em></h2>
           </div>
 
-          <div className="abd-cols">
-            <div className="abd-col reveal-l d2">
-              <div className="abd-col-header">
-                <span className="abd-num">01</span>
-                <h3>Core Consulting</h3>
-              </div>
-              <ul className="abd-list">
-                <li>GCC operating model design & market entry</li>
-                <li>AI-led enterprise transformation</li>
-                <li>IT operating model & governance design</li>
-                <li>C-suite stakeholder management</li>
-                <li>Capability mapping & talent planning</li>
-                <li>Lean Six Sigma process optimisation</li>
-                <li>KPI design, benchmarking & reporting</li>
-                <li>Financial modelling (DCF, valuation)</li>
-                <li>Agile programme delivery</li>
-              </ul>
-              <div className="abd-tag-row">
-                {['PwC', 'EY', 'FMCG', 'Chemicals', 'Cement', 'PE'].map(t => (
-                  <span key={t} className="tag">{t}</span>
-                ))}
-              </div>
+          <div className="edu-row reveal d2">
+            <div>
+              <h3>Bachelor of Technology, Computer Science</h3>
+              <p style={{ marginTop: 8, color: 'var(--ink-4)', fontFamily: 'var(--mono)', fontSize: 13 }}>
+                Vellore Institute of Technology
+              </p>
             </div>
-
-            <div className="abd-divider">
-              <span className="abd-plus">+</span>
-            </div>
-
-            <div className="abd-col reveal-r d3">
-              <div className="abd-col-header">
-                <span className="abd-num">02</span>
-                <h3>Technical Edge</h3>
-              </div>
-              <ul className="abd-list">
-                <li>Power BI & Tableau: executive dashboards</li>
-                <li>Python: automation, ML, data pipelines</li>
-                <li>SAP FICO/MM: advanced user</li>
-                <li>SQL & Excel VBA workflow automation</li>
-                <li>AI tool scoping, prototyping & deployment</li>
-                <li>LLM integrations for enterprise use cases</li>
-                <li>React / TypeScript: POC & tool development</li>
-              </ul>
-              <div className="abd-tag-row">
-                {['Power BI', 'Python', 'SAP', 'SQL', 'AI Prototyping'].map(t => (
-                  <span key={t} className="tag">{t}</span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CERTIFICATIONS ────────────────────────── */}
-      <section className="ab-certs section" ref={useReveal()}>
-        <div className="container">
-          <div className="abc-header reveal">
-            <span className="eyebrow">Credentials</span>
-            <h2 className="section-heading" style={{ marginTop: 20 }}>
-              Education &<br />
-              <span>Certifications</span>
-            </h2>
+            <div className="years">2021<br /><em>2025</em></div>
           </div>
 
-          {/* Education block */}
-          <div className="abc-edu reveal d2">
-            <div className="abce-left">
-              <span className="eyebrow" style={{ marginBottom: 12 }}>Education</span>
-              <h3>Bachelor of Technology,<br />Computer Science</h3>
-              <p>Vellore Institute of Technology (VIT)</p>
-            </div>
-            <div className="abce-right">
-              <span className="big-num">2021</span>
-              <span className="abc-dash">→</span>
-              <span className="big-num">2025</span>
-            </div>
-          </div>
-
-          {/* Cert grid */}
-          <div className="abc-grid">
-            {certifications.map((c, i) => (
-              <div key={i} className={`abc-item reveal d${(i % 3) + 2}`} style={{ '--cert-color': c.color }}>
-                <span className="abc-org">{c.org}</span>
-                <p className="abc-title">{c.title}</p>
-                <span className="abc-dot" />
+          <div className="cert-grid">
+            {certifications.map(([org, title], i) => (
+              <div key={i} className={`cert-item reveal d${(i % 3) + 2}`}>
+                <span className="cert-org">{org}</span>
+                <p className="cert-title">{title}</p>
               </div>
             ))}
           </div>
