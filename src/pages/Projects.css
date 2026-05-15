@@ -13,9 +13,14 @@
   flex-direction: column;
   gap: 14px;
   transition: background var(--dur) var(--ease);
-  cursor: default;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
 }
 .proj-card:hover { background: var(--paper); }
+.proj-card:hover .proj-arrow { opacity: 1; transform: translateX(0); }
+.proj-card:hover .proj-title { color: var(--accent); }
 
 .proj-top {
   display: flex;
@@ -79,6 +84,20 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   max-width: 60%;
+}
+
+.proj-arrow {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  font-size: 18px;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.proj-title {
+  transition: color var(--dur) var(--ease);
 }
 
 /* ── Responsive ──────────────────────────────── */
