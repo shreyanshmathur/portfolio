@@ -7,16 +7,16 @@ const experiences = [
     index: '01',
     firm: 'PwC India',
     role: 'Associate, Strategy',
-    period: 'Aug 2025 — Present',
+    period: 'Aug 2025 - Present',
     type: 'Full-time',
     metric: { num: '12', label: 'enterprise tools' },
     bullets: [
-      'GCC strategy for a global FMCG client — operating model, transitions, 35+ key hires.',
-      'National AI Accelerator co-lead — 12 tools, governance, +15% adoption in 90 days.',
-      'IT operating model redesign for a cement leader across 15+ states — 25% faster dispatch.',
+      'GCC strategy for a global FMCG client: operating model, transitions, 35+ key hires.',
+      'National AI Accelerator co-lead: 12 tools, governance, +15% adoption in 90 days.',
+      'IT operating model redesign for a cement leader across 15+ states: 25% faster dispatch.',
     ],
     detail: {
-      context: 'Promoted to Associate after the advisory internship. Currently leading three concurrent engagement streams — GCC strategy, AI transformation, and IT restructuring — across FMCG, cement, and chemicals sectors.',
+      context: 'Promoted to Associate after the advisory internship. Currently leading three concurrent engagement streams: GCC strategy, AI transformation, and IT restructuring, across FMCG, cement, and chemicals sectors.',
       engagements: [
         {
           title: 'Five-year India Tech Hub Strategy',
@@ -25,7 +25,7 @@ const experiences = [
           outcome: '27 → 108 FTEs scaled across 4 geographies within the 5-year plan window.',
         },
         {
-          title: 'National AI Accelerator — 12 Enterprise Tools',
+          title: 'National AI Accelerator: 12 Enterprise Tools',
           client: 'PwC national programme',
           description: 'Co-led a national programme that shipped 12 enterprise AI tools to PwC clients. Wrote product requirement documents, defined AI governance frameworks, and ran adoption sprints. Tools spanned document intelligence, process automation, and analytics dashboards.',
           outcome: '+15% tool adoption in 90 days post-launch. Zero governance incidents.',
@@ -44,13 +44,13 @@ const experiences = [
     index: '02',
     firm: 'PwC India',
     role: 'Advisory Intern',
-    period: 'Jan — Aug 2025',
+    period: 'Jan - Aug 2025',
     type: 'Internship',
     metric: { num: '20%', label: 'cycle time cut' },
     bullets: [
-      'C-suite SAP FICO/MM optimisation for a paint manufacturer — 500+ users trained.',
+      'C-suite SAP FICO/MM optimisation for a paint manufacturer: 500+ users trained.',
       'PM tracker for 15+ initiatives, zero slippage, real-time exec reporting.',
-      'Lean Six Sigma process mapping and VBA/Python automation — 20% cycle reduction.',
+      'Lean Six Sigma process mapping and VBA/Python automation: 20% cycle reduction.',
     ],
     detail: {
       context: 'Advisory internship across technology and operations consulting. Embedded in two client engagements simultaneously, with direct exposure to senior partner delivery.',
@@ -81,11 +81,11 @@ const experiences = [
     index: '03',
     firm: 'EY',
     role: 'GCC Research Intern',
-    period: 'Aug — Dec 2023',
+    period: 'Aug - Dec 2023',
     type: 'Internship',
     metric: { num: '75%', label: 'prospecting cut' },
     bullets: [
-      'AI sales pipeline deployed across four city offices — 75% manual prospecting cut.',
+      'AI sales pipeline deployed across four city offices: 75% manual prospecting cut.',
       'Tableau and Power BI dashboards for acquisition metrics and pipeline KPIs.',
       'GCC benchmarking research informing Fortune 500 client strategy.',
     ],
@@ -95,7 +95,7 @@ const experiences = [
         {
           title: 'AI Sales Pipeline',
           client: 'EY GCC Research team',
-          description: 'Designed and deployed an AI-assisted sales pipeline tool used across Bengaluru, Mumbai, Hyderabad, and Delhi offices. The tool automated lead scoring, company profiling, and outreach sequencing — cutting manual prospecting work by 75%.',
+          description: 'Designed and deployed an AI-assisted sales pipeline tool used across Bengaluru, Mumbai, Hyderabad, and Delhi offices. The tool automated lead scoring, company profiling, and outreach sequencing, cutting manual prospecting work by 75%.',
           outcome: '75% reduction in manual prospecting hours across four offices.',
         },
         {
@@ -118,7 +118,7 @@ const experiences = [
     index: '04',
     firm: 'BelleVidCo',
     role: 'Co-founder and CEO',
-    period: 'Feb 2023 — Dec 2024',
+    period: 'Feb 2023 - Dec 2024',
     type: 'Founder',
     metric: { num: '35%', label: 'pick-travel reduction' },
     bullets: [
@@ -127,7 +127,7 @@ const experiences = [
       'Lean 8-person team, 200+ growth campaigns.',
     ],
     detail: {
-      context: 'Co-founded BelleVidCo to deliver AI-enabled operations and growth systems for SME clients. Ran the business end-to-end — client acquisition, scoping, delivery, and team management — alongside my degree.',
+      context: 'Co-founded BelleVidCo to deliver AI-enabled operations and growth systems for SME clients. Ran the business end-to-end: client acquisition, scoping, delivery, and team management, alongside my degree.',
       engagements: [
         {
           title: 'ML SKU Placement Engine',
@@ -138,7 +138,7 @@ const experiences = [
         {
           title: 'AI Delivery Across Sectors',
           client: 'Logistics, fashion, PE advisory clients',
-          description: 'Delivered AI-enabled tools and operational systems across multiple clients — supply chain dashboards for logistics, growth analytics for fashion brands, and data room preparation support for a PE advisory client.',
+          description: 'Delivered AI-enabled tools and operational systems across multiple clients: supply chain dashboards for logistics, growth analytics for fashion brands, and data room preparation support for a PE advisory client.',
           outcome: '6 client engagements delivered. 100% repeat or referral acquisition.',
         },
         {
@@ -155,7 +155,7 @@ const experiences = [
     index: '05',
     firm: 'Recover Media',
     role: 'Marketing Team Lead',
-    period: 'Aug 2020 — Jan 2023',
+    period: 'Aug 2020 - Jan 2023',
     type: 'Full-time',
     metric: { num: '8K+', label: 'subscribers in 6mo' },
     bullets: [
@@ -213,7 +213,7 @@ export default function Experience() {
             {experiences.map((e, i) => (
               <div key={i} className={`exp-item${openIndex === i ? ' is-open' : ''}`}>
 
-                {/* Collapsed row — always visible */}
+                {/* Collapsed row - always visible */}
                 <button
                   className={`exp-row reveal d${Math.min(i + 1, 5)}`}
                   onClick={() => toggle(i)}

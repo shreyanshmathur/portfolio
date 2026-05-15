@@ -34,7 +34,7 @@ const capabilities = [
   {
     heading: 'Technical',
     items: [
-      'Python — automation, ML, pipelines',
+      'Python: automation, ML, pipelines',
       'React / TypeScript prototypes',
       'LLM integration (Groq, OpenAI)',
       'SAP FICO/MM advanced user',

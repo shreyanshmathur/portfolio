@@ -8,7 +8,7 @@
 .exp-item { border-bottom: 1px solid var(--line); }
 .exp-item.is-open { border-bottom-color: var(--ink); }
 
-/* Row — now a button */
+/* Row - now a button */
 .exp-row {
   display: grid;
   grid-template-columns: 60px 1fr 160px 40px;
