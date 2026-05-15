@@ -24,7 +24,7 @@
   display: block;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center top;
   filter: grayscale(0.1) contrast(1.02);
 }
 .ah-portrait-meta {
