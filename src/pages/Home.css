@@ -446,7 +446,7 @@
 .feat-card:hover { background: var(--bg-card-h); }
 .feat-card:hover::before { transform: scaleY(1); }
 
-/* Hero variant — large left card */
+/* Hero variant - large left card */
 .feat-card--hero {
   min-height: 420px;
   justify-content: flex-end;

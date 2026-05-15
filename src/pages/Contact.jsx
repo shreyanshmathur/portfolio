@@ -65,7 +65,7 @@ export default function Contact() {
             <span className="shimmer">something remarkable.</span>
           </h1>
           <p className="ct-sub reveal d3">
-            Whether you have a role, a project, or just want to talk strategy —<br />
+            Whether you have a role, a project, or just want to talk strategy,<br />
             I read every message.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function Contact() {
 
               <div className="ctb-note reveal d5">
                 <span className="eyebrow" style={{ marginBottom: 12 }}>Currently</span>
-                <p>Strategy Associate at PwC, Mumbai. Open to consulting roles — strategy, operations, and AI transformation — at top-tier firms globally. Also available for select advisory engagements.</p>
+                <p>Strategy Associate at PwC, Mumbai. Open to consulting roles in strategy, operations, and AI transformation at top-tier firms globally. Also available for select advisory engagements.</p>
               </div>
             </div>
 

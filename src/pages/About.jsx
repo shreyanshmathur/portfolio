@@ -15,7 +15,7 @@ const facts = [
   { icon: '◈', label: 'Role',         value: 'Strategy Associate' },
   { icon: '◉', label: 'Company',      value: 'PwC India' },
   { icon: '⊕', label: 'Location',     value: 'Mumbai, India' },
-  { icon: '◫', label: 'Education',    value: 'B.Tech CS — VIT' },
+  { icon: '◫', label: 'Education',    value: 'B.Tech CS, VIT' },
   { icon: '⬡', label: 'Speciality',   value: 'GCC · AI · Full-Stack' },
   { icon: '◆', label: 'Available',    value: 'Open to opportunities' },
 ]
@@ -43,7 +43,7 @@ export default function About() {
             <span className="outline-text">Who Builds.</span>
           </h1>
           <p className="ab-tagline">
-            Management consultant at PwC with a CS background — I design operating models,
+            Management consultant at PwC with a CS background. I design operating models,
             lead AI transformations, and deliver results from the C-suite down to ground-level execution.
             The technical edge isn't the story; it's what makes the strategy more credible.
           </p>
@@ -56,7 +56,7 @@ export default function About() {
           <blockquote className="ab-quote reveal">
             <span className="abq-mark">"</span>
             The rarest hire in consulting isn't the best strategist
-            or the best analyst — it's the one who can tell you
+            or the best analyst. It's the one who can tell you
             what to build <em>and then build it.</em>
             <span className="abq-mark">"</span>
           </blockquote>
@@ -84,16 +84,16 @@ export default function About() {
             </div>
             <div className="abs-right reveal-r d2">
               <p>
-                I came into consulting through an unconventional path — a Computer Science degree at VIT, where I was more interested in how organisations work than how code runs. That led me to EY's GCC Research team, where I designed an AI-powered sales pipeline that cut manual prospecting by 75% across four city offices.
+                I came into consulting through an unconventional path: a Computer Science degree at VIT, where I was more interested in how organisations work than how code runs. That led me to EY's GCC Research team, where I designed an AI-powered sales pipeline that cut manual prospecting by 75% across four city offices.
               </p>
               <p>
-                I then co-founded BelleVidCo, delivering operational systems for clients in logistics, fashion, and private equity. Running client engagements end-to-end — from scoping to delivery — taught me what slides alone can't: that strategy is only as good as the implementation plan behind it.
+                I then co-founded BelleVidCo, delivering operational systems for clients in logistics, fashion, and private equity. Running client engagements end-to-end, from scoping to delivery, taught me what slides alone can't: that strategy is only as good as the implementation plan behind it.
               </p>
               <p>
                 At PwC I've led GCC strategy for a global FMCG client (scaling an India Tech Hub from 27 to 108 FTEs), redesigned the IT operating model for a national cement leader across 15+ states, co-led a national AI Accelerator that shipped 12 enterprise tools, and launched an AI helpdesk that cut review cycles by 30%.
               </p>
               <p>
-                The CS background means I can pressure-test every AI recommendation I make — and prototype the tool that proves it. For a consulting client, that's the difference between a roadmap and a result.
+                The CS background means I can pressure-test every AI recommendation I make and prototype the tool that proves it. For a consulting client, that's the difference between a roadmap and a result.
               </p>
               <div style={{ marginTop: 32 }}>
                 <Link to="/experience" className="btn-primary">See My Experience ↗</Link>
@@ -165,13 +165,13 @@ export default function About() {
                 <h3>Technical Edge</h3>
               </div>
               <ul className="abd-list">
-                <li>Power BI & Tableau — executive dashboards</li>
-                <li>Python — automation, ML, data pipelines</li>
-                <li>SAP FICO/MM — advanced user</li>
+                <li>Power BI & Tableau: executive dashboards</li>
+                <li>Python: automation, ML, data pipelines</li>
+                <li>SAP FICO/MM: advanced user</li>
                 <li>SQL & Excel VBA workflow automation</li>
                 <li>AI tool scoping, prototyping & deployment</li>
                 <li>LLM integrations for enterprise use cases</li>
-                <li>React / TypeScript — POC & tool development</li>
+                <li>React / TypeScript: POC & tool development</li>
               </ul>
               <div className="abd-tag-row">
                 {['Power BI', 'Python', 'SAP', 'SQL', 'AI Prototyping'].map(t => (

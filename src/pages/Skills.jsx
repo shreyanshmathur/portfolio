@@ -97,7 +97,7 @@ export default function Skills() {
             <span className="outline-text">Technical breadth.</span>
           </h1>
           <p className="sk-sub reveal d3">
-            Four competency areas that make a consulting engagement land — from strategy through to delivery.
+            Four competency areas that make a consulting engagement land, from strategy through to delivery.
           </p>
         </div>
       </section>
@@ -176,12 +176,12 @@ export default function Skills() {
               {
                 num: '01',
                 title: 'Problem First',
-                body: 'Every engagement starts with a clearly defined problem — not a pre-packaged solution. I work from business outcomes backwards to design the operating model, process, or tool that gets there.',
+                body: 'Every engagement starts with a clearly defined problem, not a pre-packaged solution. I work from business outcomes backwards to design the operating model, process, or tool that gets there.',
               },
               {
                 num: '02',
                 title: 'Structured Delivery',
-                body: 'I use Lean Six Sigma, Agile, and governance frameworks to turn strategy into implementation. Zero issue slippage on 15+ tracked initiatives at PwC — not by accident.',
+                body: 'I use Lean Six Sigma, Agile, and governance frameworks to turn strategy into implementation. Zero issue slippage on 15+ tracked initiatives at PwC. Not by accident.',
               },
               {
                 num: '03',

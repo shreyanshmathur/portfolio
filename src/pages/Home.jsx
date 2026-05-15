@@ -21,7 +21,7 @@ const featured = [
   {
     num: '01',
     title: '5-Year India Tech Hub Strategy',
-    co: 'PwC — Global FMCG Client',
+    co: 'PwC, Global FMCG Client',
     tags: ['GCC Strategy', 'Operating Model', 'Headcount Scaling'],
     metric: '27 → 108 FTEs scaled across 4 geographies',
     color: '#C9943A',
@@ -29,8 +29,8 @@ const featured = [
   },
   {
     num: '02',
-    title: 'AI Accelerator — 12 Enterprise Tools',
-    co: 'PwC — National Programme',
+    title: 'AI Accelerator: 12 Enterprise Tools',
+    co: 'PwC, National Programme',
     tags: ['AI Transformation', 'Governance', 'Product Requirements'],
     metric: '+15% tool adoption in 90 days',
     color: '#4A90E2',
@@ -39,7 +39,7 @@ const featured = [
   {
     num: '03',
     title: 'IT Operating Model Redesign',
-    co: 'PwC — National Cement Leader',
+    co: 'PwC, National Cement Leader',
     tags: ['Hub-and-Spoke', 'Governance', '15+ States'],
     metric: '25% faster incident dispatch',
     color: '#06B6D4',
@@ -105,7 +105,7 @@ export default function Home() {
           <p className="hero-desc">
             Management consultant at PwC specialising in GCC operating models,
             AI-led transformation, and enterprise restructuring.<br />
-            With a CS background — the rare consultant who can both design the strategy
+            With a CS background, the rare consultant who can both design the strategy
             and prototype the tools that prove it.
           </p>
 
@@ -152,7 +152,7 @@ export default function Home() {
           <p className="manifesto-text reveal" ref={useReveal()}>
             <span className="mf-quote">"</span>
             Most consultants hand over a roadmap. I hand over a roadmap
-            — and the prototype that proves it works.
+            and the prototype that proves it works.
             <span className="mf-quote">"</span>
           </p>
         </div>
@@ -170,7 +170,7 @@ export default function Home() {
           </div>
 
           <div className="feat-grid">
-            {/* First card — large feature */}
+            {/* First card - large feature */}
             <Link
               to={featured[0].to}
               className="feat-card feat-card--hero reveal d1"
@@ -189,7 +189,7 @@ export default function Home() {
               <div className="fc-arrow">→</div>
             </Link>
 
-            {/* Right column — two stacked cards */}
+            {/* Right column - two stacked cards */}
             <div className="feat-col">
               {featured.slice(1).map((f, i) => (
                 <Link
@@ -240,7 +240,7 @@ export default function Home() {
               <div className="id-card reveal d3">
                 <div className="idc-icon">⬡</div>
                 <h4>The Technical Edge</h4>
-                <p>A CS degree means I don't just recommend AI tools — I can scope, prototype, and validate them. That closes the gap between slide deck and delivery, and makes me a more credible advisor.</p>
+                <p>A CS degree means I don't just recommend AI tools. I can scope, prototype, and validate them. That closes the gap between slide deck and delivery, and makes me a more credible advisor.</p>
               </div>
             </div>
           </div>

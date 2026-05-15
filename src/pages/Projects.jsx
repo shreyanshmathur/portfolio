@@ -6,12 +6,12 @@ const projects = [
     num: '01',
     title: 'Enterprise Capability Generator',
     category: 'Consulting Tool',
-    desc: 'Browser-based tool that ingests capability scoring data (XLSX) across 8+ business domains and auto-generates fully formatted, branded PowerPoint decks in one click — cutting 4–6 hours of manual slide-building per engagement.',
-    impact: '4–6 hrs saved / engagement',
+    desc: 'Browser-based tool that ingests capability scoring data (XLSX) across 8+ business domains and auto-generates fully formatted, branded PowerPoint decks in one click, cutting 4-6 hours of manual slide-building per engagement.',
+    impact: '4-6 hrs saved / engagement',
     tags: ['React', 'JavaScript', 'XLSX Parsing', 'PowerPoint Automation'],
     metrics: [
       { num: '8+', label: 'Business Domains' },
-      { num: '5', label: 'Scoring Levels (L0–L2)' },
+      { num: '5', label: 'Scoring Levels (L0-L2)' },
       { num: '0', label: 'Manual Slide Work' },
     ],
     color: '#C9943A',
@@ -21,7 +21,7 @@ const projects = [
     num: '02',
     title: 'AI Pharmacy Demand Bot',
     category: 'Healthcare AI',
-    desc: 'AI-powered pharmacy demand forecasting tool that predicts medicine requirements across 7–60 day horizons, flags expiry risk by batch, detects prescription-to-sale leakage, and classifies inventory using ABC/XYZ algorithms.',
+    desc: 'AI-powered pharmacy demand forecasting tool that predicts medicine requirements across 7-60 day horizons, flags expiry risk by batch, detects prescription-to-sale leakage, and classifies inventory using ABC/XYZ algorithms.',
     impact: 'Executive summaries for leadership',
     tags: ['Python', 'AI', 'Forecasting', 'Inventory', 'Healthcare'],
     metrics: [
@@ -36,7 +36,7 @@ const projects = [
     num: '03',
     title: 'Surya Hospital AI Suite',
     category: 'Healthcare Automation',
-    desc: 'Comprehensive AI automation suite for Surya Hospitals — includes doctor approval workflows, patient communications via Telegram Bot, and an AI-driven content generation pipeline with brand voice validation.',
+    desc: 'Comprehensive AI automation suite for Surya Hospitals: doctor approval workflows, patient communications via Telegram Bot, and an AI-driven content generation pipeline with brand voice validation.',
     impact: 'Full hospital ops automation',
     tags: ['React', 'Python', 'Telegram Bot', 'Groq', 'FastAPI'],
     metrics: [
@@ -50,7 +50,7 @@ const projects = [
     num: '04',
     title: 'SPACES AI Style Concierge',
     category: 'Retail AI',
-    desc: 'AI-powered shopping assistant for SPACES with conversational chatbot (Groq Llama), "Complete the Look" cross-selling engine, and room scanning capabilities — integrated with FastAPI backend as a native-like widget.',
+    desc: 'AI-powered shopping assistant for SPACES with conversational chatbot (Groq Llama), "Complete the Look" cross-selling engine, and room scanning capabilities, integrated with FastAPI backend as a native-like widget.',
     impact: 'Cross-selling engine + room scan',
     tags: ['JavaScript', 'FastAPI', 'Groq Llama', 'AI Chat'],
     metrics: [
@@ -64,7 +64,7 @@ const projects = [
     num: '05',
     title: 'Learner Risk Copilot',
     category: 'EdTech AI',
-    desc: 'Refund prevention dashboard designed for learner success teams — uses Groq AI to flag at-risk learners, predict churn, and suggest proactive interventions to reduce refund rates.',
+    desc: 'Refund prevention dashboard designed for learner success teams. Uses Groq AI to flag at-risk learners, predict churn, and suggest proactive interventions to reduce refund rates.',
     impact: 'Deployed on Netlify',
     tags: ['React', 'Groq AI', 'Netlify', 'EdTech'],
     metrics: [
@@ -89,7 +89,7 @@ const projects = [
   },
   {
     num: '07',
-    title: 'AI Sales Pipeline — EY',
+    title: 'AI Sales Pipeline, EY',
     category: 'Enterprise Automation',
     desc: 'Engineered and deployed an AI sales pipeline at EY that cut manual prospecting by 75% and boosted acquisition speed by 60%. Used across four major city offices with real-time BI visibility.',
     impact: '75% prospecting reduction',
@@ -127,7 +127,7 @@ export default function Projects() {
             <span className="outline-text">deliverables.</span>
           </h1>
           <p className="proj-sub reveal d3">
-            Beyond the engagement decks — the tools and systems built to prove, accelerate, and sustain each strategy.
+            Beyond the engagement decks. The tools and systems built to prove, accelerate, and sustain each strategy.
           </p>
         </div>
       </section>
@@ -181,7 +181,7 @@ export default function Projects() {
             <div className="ghs-left">
               <span className="eyebrow">For the technically inclined</span>
               <h2 className="ghs-heading">The code is<br />all on GitHub.</h2>
-              <p>Prototypes, dashboards, and AI tools built alongside each consulting engagement — open for review.</p>
+              <p>Prototypes, dashboards, and AI tools built alongside each consulting engagement, open for review.</p>
             </div>
             <div className="ghs-right">
               <div className="ghs-stat">

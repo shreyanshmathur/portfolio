@@ -7,8 +7,8 @@ const experiences = [
     num: '01',
     company: 'PwC',
     fullName: 'PricewaterhouseCoopers',
-    role: 'Associate — Strategy',
-    period: 'Aug 2025 – Present',
+    role: 'Associate, Strategy',
+    period: 'Aug 2025 - Present',
     type: 'Full-Time',
     color: '#E8B95F',
     location: 'Mumbai, India',
@@ -18,10 +18,10 @@ const experiences = [
       { num: '20%', label: 'Faster Market\nEntry' },
     ],
     highlights: [
-      'Led GCC strategy for a global FMCG client — defined operating model, planned transitions, hired 35+ key roles to support India Tech Hub\'s multi-year transformation, enabling 20% faster market entry.',
+      'Led GCC strategy for a global FMCG client: defined operating model, planned transitions, hired 35+ key roles to support India Tech Hub\'s multi-year transformation, enabling 20% faster market entry.',
       'Launched an AI helpdesk for a specialty chemicals manufacturer, cutting review cycles by 30% and resolution time by 20% using Agile and Asana.',
       'Co-led a national AI Accelerator that launched 12 enterprise tools, wrote PRDs, set up governance, and increased tool adoption by 15% in three months.',
-      'Redesigned IT operating model for a national cement leader — hub-and-spoke structure across 15+ states; enabled 25% faster incident dispatch.',
+      'Redesigned IT operating model for a national cement leader, hub-and-spoke structure across 15+ states, enabling 25% faster incident dispatch.',
       'Authored the 5-year India Tech Hub Strategy & Activation Plan, scaling headcount from 27 to 108 FTEs across France, Spain, Poland, and India.',
       'Built Power BI dashboards for the Data & AI SteerCo delivering zone-level workforce projections across four geographies.',
     ],
@@ -32,7 +32,7 @@ const experiences = [
     company: 'PwC',
     fullName: 'PricewaterhouseCoopers',
     role: 'Advisory Intern',
-    period: 'Jan 2025 – Aug 2025',
+    period: 'Jan 2025 - Aug 2025',
     type: 'Internship',
     color: '#C9943A',
     location: 'Mumbai, India',
@@ -44,7 +44,7 @@ const experiences = [
     highlights: [
       'Partnered with a paint manufacturing leader\'s C-suite on SAP FICO/MM optimization, cutting processing time by 10% and supporting 500+ users with targeted training.',
       'Developed and deployed project management tracking for 15+ initiatives; recognized for zero issue slippage and real-time exec reporting.',
-      'Advanced process improvement by mapping pain points with Lean Six Sigma, automating reporting workflows using VBA and Python — cutting cycle time by 20%.',
+      'Advanced process improvement by mapping pain points with Lean Six Sigma, automating reporting workflows using VBA and Python, cutting cycle time by 20%.',
     ],
     tags: ['SAP FICO/MM', 'Lean Six Sigma', 'VBA', 'Python', 'Project Tracking'],
   },
@@ -53,7 +53,7 @@ const experiences = [
     company: 'EY',
     fullName: 'Ernst & Young',
     role: 'GCC Research Intern',
-    period: 'Aug 2023 – Dec 2023',
+    period: 'Aug 2023 - Dec 2023',
     type: 'Internship',
     color: '#4A90E2',
     location: 'Remote / India',
@@ -63,9 +63,9 @@ const experiences = [
       { num: '4',   label: 'City Offices\nDeployed' },
     ],
     highlights: [
-      'Engineered and rolled out an AI sales pipeline, reducing manual prospecting by 75% and boosting acquisition speed by 60% — deployed across four major city offices.',
+      'Engineered and rolled out an AI sales pipeline, reducing manual prospecting by 75% and boosting acquisition speed by 60%, deployed across four major city offices.',
       'Built interactive BI dashboards in Tableau and Power BI providing real-time visibility into client acquisition metrics, pipeline performance, and operational KPIs.',
-      'Conducted GCC benchmarking research across technology, FMCG, and logistics sectors — insights informed Fortune 500 client strategy.',
+      'Conducted GCC benchmarking research across technology, FMCG, and logistics sectors; insights informed Fortune 500 client strategy.',
     ],
     tags: ['AI Sales Pipeline', 'Tableau', 'Power BI', 'GCC Research', 'Python'],
   },
@@ -74,7 +74,7 @@ const experiences = [
     company: 'BelleVidCo',
     fullName: 'Digital Agency',
     role: 'Co-Founder & CEO',
-    period: 'Feb 2023 – Dec 2024',
+    period: 'Feb 2023 - Dec 2024',
     type: 'Founder',
     color: '#06B6D4',
     location: 'India',
@@ -95,7 +95,7 @@ const experiences = [
     company: 'Recover Media',
     fullName: 'Media & Marketing',
     role: 'Marketing Team Lead',
-    period: 'Aug 2020 – Jan 2023',
+    period: 'Aug 2020 - Jan 2023',
     type: 'Full-Time',
     color: '#9B59B6',
     location: 'India',
@@ -133,7 +133,7 @@ export default function Experience() {
             <span className="outline-text">One Trajectory.</span>
           </h1>
           <p className="exp-sub reveal d3">
-            From university fests to Fortune 500 strategy rooms — each step sharper than the last.
+            From university fests to Fortune 500 strategy rooms. Each step sharper than the last.
           </p>
         </div>
       </section>

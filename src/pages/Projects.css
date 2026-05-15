@@ -97,7 +97,7 @@
   z-index: 2;
 }
 
-/* size variants — large spans 2 columns */
+/* size variants - large spans 2 columns */
 .pc-large {
   grid-column: span 2;
 }
