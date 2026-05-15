@@ -1,0 +1,265 @@
+/* ── SK HERO ──────────────────────────────────── */
+.sk-hero {
+  position: relative;
+  min-height: 58vh;
+  display: flex;
+  align-items: flex-end;
+  padding: calc(var(--nav-h) + 60px) 0 80px;
+  overflow: hidden;
+}
+
+.sk-hero-bg { position: absolute; inset: 0; pointer-events: none; }
+
+.sk-orb1, .sk-orb2 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  animation: orbDrift 22s ease-in-out infinite;
+}
+.sk-orb1 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(6,182,212,0.10) 0%, transparent 70%);
+  top: -60px; right: 10%;
+}
+.sk-orb2 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(201,148,58,0.10) 0%, transparent 70%);
+  bottom: 0; left: -80px;
+  animation-delay: -10s;
+}
+
+/* Hero backdrop watermark */
+.sk-hero-wm {
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  font-family: var(--font-d);
+  font-size: clamp(140px, 22vw, 300px);
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(6, 182, 212, 0.15);
+  line-height: 0.85;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.04em;
+  z-index: 0;
+}
+
+.sk-hero .container { position: relative; z-index: 1; }
+
+.sk-h1 {
+  font-family: var(--font-d);
+  font-size: clamp(56px, 9vw, 120px);
+  font-weight: 700;
+  line-height: 0.93;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin: 24px 0 28px;
+}
+
+.sk-sub {
+  font-size: 16px;
+  color: var(--text-2);
+  line-height: 1.7;
+}
+
+/* ── SKILL CATEGORIES ─────────────────────────── */
+.skc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: var(--border-s);
+}
+
+.skc-card {
+  background: var(--bg-card);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  transition: background 0.3s;
+  border-left: 2px solid var(--cat-color, var(--gold));
+}
+
+.skc-card:hover { background: var(--bg-card-h); }
+
+.skc-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.skc-icon {
+  font-size: 22px;
+  color: var(--cat-color, var(--gold));
+  flex-shrink: 0;
+}
+
+.skc-id {
+  font-family: var(--font-m);
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.skc-name {
+  font-family: var(--font-d);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1;
+}
+
+/* Skill bars */
+.skc-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sks-item { display: flex; flex-direction: column; gap: 5px; }
+
+.sks-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sks-name {
+  font-family: var(--font-b);
+  font-size: 13px;
+  color: var(--text);
+}
+
+.sks-pct {
+  font-family: var(--font-m);
+  font-size: 10px;
+  color: var(--cat-color, var(--gold));
+  opacity: 0.7;
+}
+
+.sks-bar {
+  height: 3px;
+  background: var(--bg-surface);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.sks-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--cat-color, var(--gold)), color-mix(in srgb, var(--cat-color, var(--gold)) 60%, white));
+  border-radius: 2px;
+  transition: width 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) var(--delay, 0s);
+}
+
+/* Trigger bar fill when card visible */
+.skc-card.up .sks-fill { width: var(--fill, 80%); }
+
+.skc-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ── INDUSTRIES ───────────────────────────────── */
+.sk-ind {
+  background: var(--bg-2);
+  border-top: 1px solid var(--border-s);
+  border-bottom: 1px solid var(--border-s);
+  padding: 80px 0;
+}
+
+.ski-header { margin-bottom: 50px; }
+
+.ski-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  background: var(--border-s);
+}
+
+.ski-item {
+  background: var(--bg-card);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: background 0.3s, transform 0.3s;
+}
+.ski-item:hover { background: var(--bg-card-h); transform: translateY(-3px); }
+
+.ski-icon {
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.ski-name {
+  font-family: var(--font-b);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.ski-n {
+  font-family: var(--font-m);
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+/* ── APPROACH ─────────────────────────────────── */
+.ska-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--border-s);
+}
+
+.ska-item {
+  background: var(--bg-card);
+  padding: 40px 32px;
+  transition: background 0.3s;
+}
+.ska-item:hover { background: var(--bg-card-h); }
+
+.ska-num {
+  font-family: var(--font-m);
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.ska-title {
+  font-family: var(--font-d);
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.ska-body {
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ── Responsive ─────────────────────────────── */
+@media (max-width: 1024px) {
+  .skc-grid { grid-template-columns: 1fr; }
+  .ski-grid { grid-template-columns: repeat(2, 1fr); }
+  .ska-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .ski-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .ski-grid { grid-template-columns: 1fr; }
+}
