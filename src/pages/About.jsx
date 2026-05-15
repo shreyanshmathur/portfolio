@@ -36,17 +36,28 @@ export default function About() {
         </div>
         <div className="ab-hero-wm" aria-hidden="true">ABOUT</div>
         <div className="container ab-hero-inner">
-          <span className="eyebrow">01 / About</span>
-          <h1 className="ab-title">
-            The<br />
-            <em>Strategist</em><br />
-            <span className="outline-text">Who Builds.</span>
-          </h1>
-          <p className="ab-tagline">
-            Management consultant at PwC with a CS background. I design operating models,
-            lead AI transformations, and deliver results from the C-suite down to ground-level execution.
-            The technical edge isn't the story; it's what makes the strategy more credible.
-          </p>
+          <div className="ab-hero-text">
+            <span className="eyebrow">01 / About</span>
+            <h1 className="ab-title">
+              The<br />
+              <em>Strategist</em><br />
+              <span className="outline-text">Who Builds.</span>
+            </h1>
+            <p className="ab-tagline">
+              Management consultant at PwC with a CS background. I design operating models,
+              lead AI transformations, and deliver results from the C-suite down to ground-level execution.
+              The technical edge isn't the story; it's what makes the strategy more credible.
+            </p>
+          </div>
+          <div className="ab-hero-portrait">
+            <div className="ab-portrait-frame">
+              <img src="/shreyansh.jpg" alt="Shreyansh Mathur" className="ab-portrait-img" />
+              <div className="ab-portrait-label">
+                <span className="eyebrow">Shreyansh Mathur</span>
+                <span className="ab-portrait-role">Strategy Associate, PwC</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

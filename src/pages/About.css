@@ -28,6 +28,77 @@
   animation-delay: -8s;
 }
 
+/* Hero layout: text + portrait */
+.ab-hero-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.ab-hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Portrait */
+.ab-hero-portrait {
+  flex-shrink: 0;
+  width: clamp(200px, 20vw, 280px);
+  animation: fadeUp 0.7s ease 0.5s both;
+}
+
+.ab-portrait-frame {
+  position: relative;
+}
+
+.ab-portrait-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--gold);
+  opacity: 0.25;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ab-portrait-frame::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 40%;
+  background: linear-gradient(transparent, var(--bg) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ab-portrait-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+  filter: grayscale(15%) contrast(1.05);
+  aspect-ratio: 3 / 4;
+}
+
+.ab-portrait-label {
+  position: absolute;
+  bottom: 16px;
+  left: 0; right: 0;
+  padding: 0 16px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ab-portrait-role {
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--gold-light);
+}
+
 /* Hero backdrop watermark */
 .ab-hero-wm {
   position: absolute;
@@ -45,10 +116,7 @@
   z-index: 0;
 }
 
-.ab-hero-inner {
-  position: relative;
-  z-index: 1;
-}
+.ab-hero-inner { position: relative; z-index: 1; }
 
 .ab-hero-inner .eyebrow { margin-bottom: 28px; }
 
@@ -402,6 +470,8 @@
 }
 
 @media (max-width: 768px) {
+  .ab-hero-inner { flex-direction: column-reverse; align-items: flex-start; gap: 32px; }
+  .ab-hero-portrait { width: 160px; }
   .abs-grid { grid-template-columns: 1fr; gap: 40px; }
   .abf-grid { grid-template-columns: repeat(2, 1fr); }
   .abd-cols { grid-template-columns: 1fr; }
