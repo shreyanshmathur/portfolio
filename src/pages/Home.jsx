@@ -94,6 +94,15 @@ export default function Home() {
               <Link to="/projects" className="btn-primary">Selected work</Link>
               <Link to="/contact" className="btn-ghost">Get in touch ↗</Link>
             </div>
+
+            <div className="hero-logos">
+              <span className="hero-logos-label">Worked with</span>
+              <div className="hero-logos-row">
+                {companyLogos.map((l) => (
+                  <img key={l.name} src={l.src} alt={l.name} title={l.name} className="hero-logo" />
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="hero-portrait">
@@ -128,22 +137,6 @@ export default function Home() {
                 <span className="hl-num">{h.num}</span>
                 <span className="hl-label">{h.label}</span>
                 <span className="hl-sub">{h.sub}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ── LOGO STRIP ───────────────────────────── */}
-      <div className="logo-strip" aria-label="Organizations worked with">
-        <div className="container">
-          <span className="logo-strip-label">Worked with</span>
-        </div>
-        <div className="logo-track-wrap">
-          <div className="logo-track">
-            {logoLoop.map((l, i) => (
-              <div key={i} className="logo-item">
-                <img src={l.src} alt={l.name} title={l.name} />
               </div>
             ))}
           </div>

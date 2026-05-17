@@ -149,67 +149,45 @@
   margin-top: 4px;
 }
 
-/* ── LOGO STRIP ──────────────────────────────── */
-.logo-strip {
-  padding: 44px 0 48px;
-  border-bottom: 1px solid var(--line);
-  overflow: hidden;
+/* ── HERO LOGOS ──────────────────────────────── */
+.hero-logos {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
 }
 
-.logo-strip-label {
+.hero-logos-label {
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--ink-5);
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
-.logo-track-wrap {
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-}
-
-.logo-track {
+.hero-logos-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 64px;
-  width: max-content;
-  animation: logoScroll 40s linear infinite;
+  gap: 20px 28px;
 }
 
-.logo-item {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-item img {
-  height: 36px;
+.hero-logo {
+  height: 24px;
   width: auto;
-  max-width: 88px;
+  max-width: 72px;
   object-fit: contain;
   filter: grayscale(1);
-  opacity: 0.35;
-  transition: filter 0.3s var(--ease), opacity 0.3s var(--ease);
+  opacity: 0.4;
+  transition: filter 0.25s var(--ease), opacity 0.25s var(--ease);
   display: block;
+  flex-shrink: 0;
 }
 
-.logo-item img:hover {
+.hero-logo:hover {
   filter: grayscale(0);
   opacity: 1;
-}
-
-@keyframes logoScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .logo-track { animation: none; }
 }
 
 /* ── FEATURED WORK ───────────────────────────── */
