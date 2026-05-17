@@ -35,10 +35,7 @@ export default function Navbar() {
               <span>{l.label}</span>
             </NavLink>
           ))}
-          <span className="nav-status">
-            <span className="nav-dot" />
-            Open to roles
-          </span>
+
         </nav>
 
         <button
