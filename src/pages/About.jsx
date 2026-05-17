@@ -44,12 +44,18 @@ const capabilities = [
 ]
 
 const certifications = [
-  ['Anthropic',       'AI Fluency Framework'],
-  ['Google',          'Generative AI Leader'],
-  ['Yale',            'Financial Markets'],
-  ['BCG',             'Consulting simulation'],
-  ['JPMorgan',        'Investment Banking simulation'],
-  ['Coursera',        'Business Analysis and Process Mgmt'],
+  { org: 'Anthropic',        title: 'AI Fluency Framework & Foundations',             date: 'Apr 2026',  logo: '/logos/anthropic.png' },
+  { org: 'Google',           title: 'Generative AI Leader Certification',              date: 'Dec 2025',  logo: '/logos/google.png' },
+  { org: 'Emory University', title: 'Introduction to Management Consulting',           date: 'Oct 2025',  logo: null },
+  { org: 'Forage',           title: 'Fidelity International — Investment Management', date: 'Aug 2024',  logo: '/logos/forage.png' },
+  { org: 'Forage · BCG',     title: 'Strategy Consulting Job Simulation',             date: 'Jul 2024',  logo: '/logos/forage.png' },
+  { org: 'Forage · BCG',     title: 'Introduction to Strategy Consulting',            date: 'Jul 2024',  logo: '/logos/forage.png' },
+  { org: 'Forage · JPMorgan',title: 'Investment Banking Job Simulation',              date: 'Jul 2024',  logo: '/logos/forage.png' },
+  { org: 'Yale University',  title: 'Financial Markets — with Honors',                date: 'Jul 2024',  logo: null },
+  { org: '365 Careers',      title: 'Complete Investment Banking Course 2024',        date: 'Jul 2024',  logo: '/logos/365-careers.png' },
+  { org: '365 Careers',      title: 'Financial Modeling: DCF Valuation Model',       date: 'Jul 2024',  logo: '/logos/365-careers.png' },
+  { org: 'Coursera',         title: 'Business Analysis & Process Management',         date: 'Jul 2024',  logo: null },
+  { org: 'Coursera',         title: 'Investment Risk Management',                     date: 'Jul 2024',  logo: null },
 ]
 
 export default function About() {
@@ -181,10 +187,16 @@ export default function About() {
           </div>
 
           <div className="cert-grid">
-            {certifications.map(([org, title], i) => (
+            {certifications.map((c, i) => (
               <div key={i} className={`cert-item reveal d${(i % 3) + 2}`}>
-                <span className="cert-org">{org}</span>
-                <p className="cert-title">{title}</p>
+                <div className="cert-head">
+                  <div className="cert-org-row">
+                    {c.logo && <img className="cert-logo" src={c.logo} alt={c.org} />}
+                    <span className="cert-org">{c.org}</span>
+                  </div>
+                  <span className="cert-date">{c.date}</span>
+                </div>
+                <p className="cert-title">{c.title}</p>
               </div>
             ))}
           </div>

@@ -3,12 +3,15 @@ import { useReveal } from '../hooks/useReveal'
 import './Experience.css'
 
 const logos = {
-  'PwC India':      '/logos/pwc.png',
-  'EY':             '/logos/ey.png',
-  'BelleVidCo':     '/logos/bellevidco.png',
-  'Recover Media':  '/logos/recover-media.png',
-  'Webminix':       '/logos/webminix.png',
-  'Social Eyes':    '/logos/social-eyes.png',
+  'PwC India':         '/logos/pwc.png',
+  'EY':                '/logos/ey.png',
+  'BelleVidCo':        '/logos/bellevidco.png',
+  'Recover Media':     '/logos/recover-media.png',
+  'Webminix':          '/logos/webminix.png',
+  'Social Eyes':       '/logos/social-eyes.png',
+  'graVITas':          '/logos/gravitas.png',
+  'Riviera, VIT':      '/logos/riviera.png',
+  'Dream Merchants':   '/logos/dream-merchants.png',
 }
 
 const experiences = [
@@ -300,9 +303,49 @@ const experiences = [
   },
 ]
 
+const extracurriculars = [
+  {
+    index: 'A1',
+    org: 'graVITas',
+    role: 'Sponsorship Manager',
+    period: 'Aug – Sep 2024',
+    metric: { num: '₹75L+', label: 'sponsorship secured' },
+    bullets: [
+      'Negotiated and closed sponsorship deals worth ₹75L+ for the annual tech fest.',
+      'Secured partnerships with Altium, Autodesk, Nestlé, and EaseMyTrip.',
+      'Managed sponsor relations, deliverables, and on-ground activations end-to-end.',
+    ],
+  },
+  {
+    index: 'A2',
+    org: 'Riviera, VIT',
+    role: 'Sponsorship Coordinator',
+    period: 'Jan – Mar 2024',
+    metric: { num: '₹1.25Cr+', label: 'deals closed' },
+    bullets: [
+      'Closed ₹1.25Cr+ in sponsorship for South India\'s largest cultural festival.',
+      'Secured national brands: Pepsi and Safe Express as lead sponsors.',
+      'Coordinated sponsor logistics across 250+ events over a 3-day festival.',
+    ],
+  },
+  {
+    index: 'A3',
+    org: 'Dream Merchants',
+    role: 'Financial Mentor',
+    period: 'Mar 2022 – Aug 2024',
+    metric: { num: '2yr+', label: 'mentorship tenure' },
+    bullets: [
+      'Mentored student entrepreneurs on financial planning and budget management.',
+      'Raised sponsorship to fund financial literacy programmes across VIT campus.',
+      'Guided teams through pitch preparation, valuation exercises, and fundraising strategy.',
+    ],
+  },
+]
+
 export default function Experience() {
   const [openIdx, setOpenIdx] = useState(null)
   const r1 = useReveal()
+  const r2 = useReveal()
 
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') setOpenIdx(null) }
@@ -368,6 +411,41 @@ export default function Experience() {
                   </div>
                   <span className="exp-toggle">→</span>
                 </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── EXTRACURRICULARS ───────────────────── */}
+      <section className="section band" ref={r2}>
+        <div className="container">
+          <div className="section-head">
+            <div className="reveal">
+              <span className="eyebrow">Campus leadership</span>
+            </div>
+            <h2 className="reveal d2">Beyond the office.<br /><em>On the ground.</em></h2>
+          </div>
+          <div className="extra-grid">
+            {extracurriculars.map((e, i) => (
+              <div key={i} className={`extra-card reveal d${i + 2}`}>
+                <div className="extra-card-head">
+                  <div className="extra-firm-row">
+                    {logos[e.org] && (
+                      <img className="extra-logo" src={logos[e.org]} alt={`${e.org} logo`} />
+                    )}
+                    <span className="extra-org">{e.org}</span>
+                  </div>
+                  <div className="extra-metric">
+                    <div className="extra-metric-num">{e.metric.num}</div>
+                    <span className="extra-metric-label">{e.metric.label}</span>
+                  </div>
+                </div>
+                <h4 className="extra-role">{e.role}</h4>
+                <span className="extra-period">{e.period}</span>
+                <ul className="extra-bullets">
+                  {e.bullets.map((b, j) => <li key={j}>{b}</li>)}
+                </ul>
               </div>
             ))}
           </div>

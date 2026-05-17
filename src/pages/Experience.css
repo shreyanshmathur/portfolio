@@ -354,11 +354,122 @@
   margin-right: 4px;
 }
 
+/* ── EXTRACURRICULARS ────────────────────────── */
+.extra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.extra-card {
+  background: var(--paper);
+  padding: 32px 28px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: background var(--dur) var(--ease);
+}
+.extra-card:hover { background: var(--paper-2); }
+
+.extra-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.extra-firm-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.extra-logo {
+  height: 28px;
+  width: auto;
+  max-width: 56px;
+  object-fit: contain;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.extra-org {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+}
+
+.extra-metric { text-align: right; flex-shrink: 0; }
+.extra-metric-num {
+  font-family: var(--serif);
+  font-size: 32px;
+  line-height: 1;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.extra-metric-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-4);
+  display: block;
+  margin-top: 4px;
+}
+
+.extra-role {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0;
+  font-style: italic;
+}
+.extra-period {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-4);
+  letter-spacing: 0.04em;
+}
+
+.extra-bullets {
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+.extra-bullets li {
+  font-size: 13.5px;
+  color: var(--ink-2);
+  line-height: 1.5;
+  padding-left: 14px;
+  position: relative;
+}
+.extra-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 1px;
+  background: var(--accent-3);
+}
+
 /* ── Responsive ──────────────────────────────── */
 @media (max-width: 960px) {
   .exp-row { grid-template-columns: 40px 1fr 36px; gap: 16px; }
   .exp-metric { display: none; }
   .exp-panel-inner { padding: 32px 28px 60px; }
+  .extra-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .exp-row { grid-template-columns: 1fr 32px; gap: 12px; }

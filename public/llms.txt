@@ -44,10 +44,32 @@ The through-line: strategy that ships.
 - Key engagements: Robinsons Global Logistics (AI warehouse ops, ~35% pick travel cut), Bombay Closet Cleanse (AI pricing engine, 3,500 units/month), SPACES by Welspun (5 AI features, full shopping journey), Surya Hospitals (AI coordination layer, human-first governance), Milestone Search Capital (PE deal infrastructure, 50+ intermediaries).
 - Tools: Python, scikit-learn, React, FastAPI, Groq, WhatsApp API, Shopify API, PostgreSQL
 
+### Social Eyes — Business Development Intern (Jun – Aug 2023)
+- 20% lift in lead conversion rate through targeted sales strategy implementation.
+- 10% market penetration increase via customer behaviour analysis in hospitality and fashion verticals.
+
+### Webminix — Business Development Intern (Mar – Apr 2022)
+- 20% monthly revenue increase through new sales opportunities.
+- 15% client acquisition boost via gym partnership channel.
+- Managed and cleaned a 5,000+ contact marketing database.
+
 ### Recover Media — Marketing Team Lead (Aug 2020 – Jan 2023)
 - Grew subscriber base by 8,000+ in six months; promoted to team lead within 6 months of joining.
 - Multi-platform campaign frameworks lifted brand awareness 20%.
 - Tools: Meta Ads, Google Analytics, Mailchimp
+
+## Extracurricular Leadership (Campus)
+
+### graVITas, VIT Vellore — Sponsorship Manager (Aug – Sep 2024)
+- Secured ₹75L+ in sponsorship for the annual tech fest.
+- Partners: Altium, Autodesk, Nestlé, EaseMyTrip.
+
+### Riviera, VIT University — Sponsorship Coordinator (Jan – Mar 2024)
+- Closed ₹1.25Cr+ in sponsorship for South India's largest cultural festival.
+- Lead sponsors: Pepsi, Safe Express. Coordinated across 250+ events.
+
+### Dream Merchants, VIT — Financial Mentor (Mar 2022 – Aug 2024)
+- Mentored student entrepreneurs on financial planning; raised sponsorship for financial literacy programmes.
 
 ## Projects
 
@@ -124,6 +146,21 @@ The through-line: strategy that ships.
 - Stack: React, FastAPI, PostgreSQL, Recharts, Webflow
 - Impact: 1 unified command board; zero data silos; full digital presence rebuilt
 - Summary: Full website rebuild aligning presence to engineering authority. AI command board consolidating all operational data streams: project status, resources, equipment, financials.
+
+## Certifications
+
+- Anthropic — AI Fluency Framework & Foundations (Apr 2026)
+- Google — Generative AI Leader Certification (Dec 2025, expires Dec 2028)
+- Emory University — Introduction to Management Consulting (Oct 2025)
+- Forage / Fidelity International — Investment Management Job Simulation (Aug 2024)
+- Forage / BCG — Strategy Consulting Job Simulation (Jul 2024)
+- Forage / BCG — Introduction to Strategy Consulting (Jul 2024)
+- Forage / JPMorgan Chase — Investment Banking Job Simulation (Jul 2024)
+- Yale University — Financial Markets with Honors (Jul 2024)
+- 365 Careers — Complete Investment Banking Course 2024 (Jul 2024)
+- 365 Careers — Financial Modeling: Build a Complete DCF Valuation Model (Jul 2024)
+- Coursera — Business Analysis & Process Management (Jul 2024)
+- Coursera — Investment Risk Management (Jul 2024)
 
 ## Skills and tools
 

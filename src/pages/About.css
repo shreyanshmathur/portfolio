@@ -218,6 +218,28 @@
 .cert-item {
   background: var(--paper-2);
   padding: 22px 20px;
+  transition: background var(--dur) var(--ease);
+}
+.cert-item:hover { background: var(--paper-3); }
+
+.cert-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.cert-org-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.cert-logo {
+  height: 16px;
+  width: auto;
+  max-width: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 2px;
 }
 .cert-org {
   font-family: var(--mono);
@@ -225,14 +247,20 @@
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--ink-4);
-  display: block;
+}
+.cert-date {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--ink-5);
+  flex-shrink: 0;
 }
 .cert-title {
   font-family: var(--serif);
-  font-size: 18px;
+  font-size: 17px;
   color: var(--ink);
   margin: 8px 0 0;
-  line-height: 1.2;
+  line-height: 1.25;
   font-weight: 400;
 }
 
