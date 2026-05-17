@@ -4,7 +4,7 @@ import './Navbar.css'
 
 const links = [
   { num: '01', to: '/experience', label: 'Experience' },
-  { num: '02', to: '/projects',   label: 'Work' },
+  { num: '02', to: '/projects',   label: 'Projects' },
   { num: '03', to: '/about',      label: 'About' },
   { num: '04', to: '/contact',    label: 'Contact' },
 ]

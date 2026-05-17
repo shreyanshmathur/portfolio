@@ -13,9 +13,9 @@ export default function Projects() {
       <div className="page-hero">
         <div className="container">
           <div className="ph-top">
-            <span className="eyebrow">02 / Work</span>
+            <span className="eyebrow">02 / Projects</span>
           </div>
-          <h1 className="ph-title">Work</h1>
+          <h1 className="ph-title">Projects</h1>
           <p className="ph-kicker">
             Consulting tools, AI prototypes, and client deliverables
             that prove the strategy actually works.
