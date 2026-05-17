@@ -3,10 +3,11 @@ import { NavLink, useLocation } from 'react-router-dom'
 import './Navbar.css'
 
 const links = [
-  { num: '01', to: '/experience', label: 'Experience' },
-  { num: '02', to: '/projects',   label: 'Projects' },
-  { num: '03', to: '/about',      label: 'About' },
-  { num: '04', to: '/contact',    label: 'Contact' },
+  { num: '01', to: '/experience',  label: 'Experience' },
+  { num: '02', to: '/projects',    label: 'Projects' },
+  { num: '03', to: '/about',       label: 'About' },
+  { num: '04', to: '/activities',  label: 'Activities' },
+  { num: '05', to: '/contact',     label: 'Contact' },
 ]
 
 export default function Navbar() {

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
 import './About.css'
 
@@ -43,25 +44,12 @@ const capabilities = [
   },
 ]
 
-const certifications = [
-  { org: 'Anthropic',        title: 'AI Fluency Framework & Foundations',             date: 'Apr 2026',  logo: '/logos/anthropic.png' },
-  { org: 'Google',           title: 'Generative AI Leader Certification',              date: 'Dec 2025',  logo: '/logos/google.png' },
-  { org: 'Emory University', title: 'Introduction to Management Consulting',           date: 'Oct 2025',  logo: '/logos/emory.png' },
-  { org: 'Forage',           title: 'Fidelity International — Investment Management', date: 'Aug 2024',  logo: '/logos/forage.png' },
-  { org: 'Forage · BCG',     title: 'Strategy Consulting Job Simulation',             date: 'Jul 2024',  logo: '/logos/forage.png' },
-  { org: 'Forage · BCG',     title: 'Introduction to Strategy Consulting',            date: 'Jul 2024',  logo: '/logos/forage.png' },
-  { org: 'Forage · JPMorgan',title: 'Investment Banking Job Simulation',              date: 'Jul 2024',  logo: '/logos/forage.png' },
-  { org: 'Yale University',  title: 'Financial Markets — with Honors',                date: 'Jul 2024',  logo: '/logos/yale.png' },
-  { org: '365 Careers',      title: 'Complete Investment Banking Course 2024',        date: 'Jul 2024',  logo: '/logos/365-careers.png' },
-  { org: '365 Careers',      title: 'Financial Modeling: DCF Valuation Model',       date: 'Jul 2024',  logo: '/logos/365-careers.png' },
-  { org: 'Coursera',         title: 'Business Analysis & Process Management',         date: 'Jul 2024',  logo: '/logos/coursera.png' },
-  { org: 'Coursera',         title: 'Investment Risk Management',                     date: 'Jul 2024',  logo: '/logos/coursera.png' },
-]
 
 export default function About() {
   const r1 = useReveal()
   const r2 = useReveal()
   const r3 = useReveal()
+  // r3 used for education section
 
   return (
     <main className="page-wrap">
@@ -166,14 +154,14 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── EDUCATION + CERTS ──────────────────── */}
+      {/* ── EDUCATION ──────────────────────────── */}
       <section className="section" ref={r3}>
         <div className="container">
           <div className="section-head">
             <div className="reveal">
-              <span className="eyebrow">Credentials</span>
+              <span className="eyebrow">Education</span>
             </div>
-            <h2 className="reveal d2">Education and<br /><em>certifications</em></h2>
+            <h2 className="reveal d2">Where it<br /><em>started.</em></h2>
           </div>
 
           <div className="edu-row reveal d2">
@@ -186,19 +174,11 @@ export default function About() {
             <div className="years">2021<br /><em>2025</em></div>
           </div>
 
-          <div className="cert-grid">
-            {certifications.map((c, i) => (
-              <div key={i} className={`cert-item reveal d${(i % 3) + 2}`}>
-                <div className="cert-head">
-                  <div className="cert-org-row">
-                    {c.logo && <img className="cert-logo" src={c.logo} alt={c.org} />}
-                    <span className="cert-org">{c.org}</span>
-                  </div>
-                  <span className="cert-date">{c.date}</span>
-                </div>
-                <p className="cert-title">{c.title}</p>
-              </div>
-            ))}
+          <div className="about-teaser reveal d3">
+            <span className="about-teaser-label">12 certifications across AI, consulting, and finance</span>
+            <Link to="/activities" className="about-teaser-link">
+              See all credentials →
+            </Link>
           </div>
         </div>
       </section>

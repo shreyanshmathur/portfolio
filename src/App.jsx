@@ -7,6 +7,7 @@ import About from './pages/About'
 import Experience from './pages/Experience'
 import Projects from './pages/Projects'
 import ProjectDetail from './pages/ProjectDetail'
+import Activities from './pages/Activities'
 import Contact from './pages/Contact'
 
 function ScrollToTop() {
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
+        <Route path="/activities" element={<Activities />} />
         <Route path="/skills" element={<Navigate to="/about" replace />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
