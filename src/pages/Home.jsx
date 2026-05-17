@@ -21,6 +21,19 @@ const tickerItems = [
 ]
 const tickerLoop = [...tickerItems, ...tickerItems]
 
+const companyLogos = [
+  { name: 'PwC India',       src: '/logos/pwc.png' },
+  { name: 'EY',              src: '/logos/ey.png' },
+  { name: 'BelleVidCo',      src: '/logos/bellevidco.png' },
+  { name: 'Social Eyes',     src: '/logos/social-eyes.png' },
+  { name: 'Webminix',        src: '/logos/webminix.png' },
+  { name: 'Recover Media',   src: '/logos/recover-media.png' },
+  { name: 'graVITas',        src: '/logos/gravitas.png' },
+  { name: 'Riviera VIT',     src: '/logos/riviera.png' },
+  { name: 'Dream Merchants', src: '/logos/dream-merchants.png' },
+]
+const logoLoop = [...companyLogos, ...companyLogos]
+
 const featured = [
   {
     index: '01',
@@ -115,6 +128,22 @@ export default function Home() {
                 <span className="hl-num">{h.num}</span>
                 <span className="hl-label">{h.label}</span>
                 <span className="hl-sub">{h.sub}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ── LOGO STRIP ───────────────────────────── */}
+      <div className="logo-strip" aria-label="Organizations worked with">
+        <div className="container">
+          <span className="logo-strip-label">Worked with</span>
+        </div>
+        <div className="logo-track-wrap">
+          <div className="logo-track">
+            {logoLoop.map((l, i) => (
+              <div key={i} className="logo-item">
+                <img src={l.src} alt={l.name} title={l.name} />
               </div>
             ))}
           </div>

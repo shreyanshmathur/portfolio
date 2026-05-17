@@ -149,6 +149,69 @@
   margin-top: 4px;
 }
 
+/* ── LOGO STRIP ──────────────────────────────── */
+.logo-strip {
+  padding: 44px 0 48px;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.logo-strip-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-5);
+  display: block;
+  margin-bottom: 28px;
+}
+
+.logo-track-wrap {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: max-content;
+  animation: logoScroll 40s linear infinite;
+}
+
+.logo-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-item img {
+  height: 36px;
+  width: auto;
+  max-width: 88px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.35;
+  transition: filter 0.3s var(--ease), opacity 0.3s var(--ease);
+  display: block;
+}
+
+.logo-item img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@keyframes logoScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-track { animation: none; }
+}
+
 /* ── FEATURED WORK ───────────────────────────── */
 .feat-list {
   display: flex;
