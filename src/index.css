@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
 :root {
   /* ── PAPER (backgrounds) ─────────────────────── */
   --paper:        #FAFAF7;
@@ -50,8 +48,8 @@
 
   /* ── MOTION ──────────────────────────────────── */
   --ease:     cubic-bezier(0.22, 0.61, 0.36, 1);
-  --dur:      240ms;
-  --dur-slow: 480ms;
+  --dur:      200ms;
+  --dur-slow: 320ms;
 
   /* ── SHADOWS ─────────────────────────────────── */
   --shadow-1: 0 1px 0 rgba(15,27,45,0.04);
@@ -215,19 +213,25 @@ h4 {
 }
 .reveal-r.up { opacity: 1; transform: translateX(0); }
 
-.d1 { transition-delay:  80ms; }
-.d2 { transition-delay: 160ms; }
-.d3 { transition-delay: 240ms; }
-.d4 { transition-delay: 320ms; }
-.d5 { transition-delay: 400ms; }
+.d1 { transition-delay:  40ms; }
+.d2 { transition-delay:  80ms; }
+.d3 { transition-delay: 120ms; }
+.d4 { transition-delay: 160ms; }
+.d5 { transition-delay: 200ms; }
 
 /* ── Page enter ──────────────────────────────── */
 .page-wrap {
-  animation: pageIn 0.45s var(--ease) both;
+  opacity: 1; /* visible by default — never gets stuck */
+  animation: pageIn 0.25s var(--ease) both;
 }
 @keyframes pageIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+/* Reduced-motion: skip animation, always visible */
+@media (prefers-reduced-motion: reduce) {
+  .page-wrap { animation: none; }
+  .reveal, .reveal-l, .reveal-r { transition: none; }
 }
 
 /* ── Page Hero (shared across inner pages) ───── */

@@ -53,7 +53,7 @@ export default function Projects() {
               <Link
                 key={p.slug}
                 to={`/projects/${p.slug}`}
-                className={`work-row reveal d${(i % 5) + 1}`}
+                className="work-row"
               >
                 <span className="work-index">{p.index}</span>
                 <div className="work-body">
