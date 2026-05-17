@@ -60,16 +60,22 @@ The through-line: strategy that ships.
 
 ## Extracurricular Leadership (Campus)
 
-### graVITas, VIT Vellore — Sponsorship Manager (Aug – Sep 2024)
-- Secured ₹75L+ in sponsorship for the annual tech fest.
+### graVITas, VIT Vellore — Head of Corporate Relations (Aug – Sep 2024)
+- India's largest student-run tech fest; 100K+ participants.
+- Led a 35-person team; secured ₹75L+ in sponsorship (40% YoY increase).
 - Partners: Altium, Autodesk, Nestlé, EaseMyTrip.
+- 100% sponsor satisfaction; 80% expressed interest in returning partnerships.
 
-### Riviera, VIT University — Sponsorship Coordinator (Jan – Mar 2024)
-- Closed ₹1.25Cr+ in sponsorship for South India's largest cultural festival.
-- Lead sponsors: Pepsi, Safe Express. Coordinated across 250+ events.
+### Riviera, VIT University — Head of Corporate Relations (Jan – Mar 2024)
+- South India's largest cultural festival; 500+ colleges.
+- Closed ₹1.25Cr+ in sponsorship; Pepsi as title sponsor + 20+ brand partners.
+- 90% sponsor retention rate; redesigned coordination processes (35% faster turnaround).
 
-### Dream Merchants, VIT — Financial Mentor (Mar 2022 – Aug 2024)
-- Mentored student entrepreneurs on financial planning; raised sponsorship for financial literacy programmes.
+### Dream Merchants, VIT — Core Team, Financial Mentor (Mar 2022 – Jan 2025)
+- VIT's premier entrepreneurship club.
+- Mentored 100+ student entrepreneurs on financial planning, valuation, and fundraising.
+- 25+ workshops and events; 500+ participants; 1,000+ students reached.
+- Built 15+ industry partnerships; grew club funding by 40%.
 
 ## Projects
 
@@ -174,10 +180,11 @@ The through-line: strategy that ships.
 ## Site structure
 
 - / — Home (hero, ticker strip with key metrics, highlights)
-- /#/experience — Full experience list with side-panel detail for each role
+- /#/experience — Full experience list with side-panel detail for each role; teaser link to Activities
 - /#/projects — 10 case studies with filter chips (Consulting Tool, Ops Automation, Healthcare AI, Healthcare Automation, Retail AI, EdTech AI, Corporate Website)
 - /#/projects/:slug — Case study detail (challenge, approach, outcomes, toolkit)
-- /#/about — Background, education, skills
+- /#/about — Background, story, capabilities, education; teaser link to Activities
+- /#/activities — Campus leadership (graVITas, Riviera, Dream Merchants) with side-panel detail drawers + 12 certifications grouped by category (University, Strategy & Consulting, Finance & Investment, AI & Technology)
 - /#/contact — Direct contact
 
 ## Contact
