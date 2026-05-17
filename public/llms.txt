@@ -38,16 +38,16 @@ The through-line: strategy that ships.
 - GCC benchmarking research cited in Fortune 500 strategy decks.
 - Tools: Tableau, Power BI, Python, Excel
 
-### BelleVidCo — Co-founder and CEO (Feb 2023 – Dec 2024)
-- ML SKU placement engine: ~35% pick-travel reduction for a fashion retailer; live AI pricing deployed.
-- Delivered AI-enabled tools across logistics, fashion, and PE advisory clients.
-- 8-person team, 200+ growth campaigns, 100% repeat or referral client acquisition.
-- Tools: Python, scikit-learn, React, FastAPI, Google Ads, Meta Ads
+### BelleVidCo / MSC Consultancy — Co-founder and CEO (Feb 2023 – Dec 2024)
+- 12 client engagements across 8 sectors: 3PL logistics, private equity, healthcare, retail AI, events, fashion, fintech, construction.
+- 5× ROI on automation builds. 15+ clients served. 5-person specialist team.
+- Key engagements: Robinsons Global Logistics (AI warehouse ops, ~35% pick travel cut), Bombay Closet Cleanse (AI pricing engine, 3,500 units/month), SPACES by Welspun (5 AI features, full shopping journey), Surya Hospitals (AI coordination layer, human-first governance), Milestone Search Capital (PE deal infrastructure, 50+ intermediaries).
+- Tools: Python, scikit-learn, React, FastAPI, Groq, WhatsApp API, Shopify API, PostgreSQL
 
 ### Recover Media — Marketing Team Lead (Aug 2020 – Jan 2023)
-- Grew YouTube channel from 0 to 8,000+ subscribers in 6 months.
-- Led a team of 6 creators and editors.
-- Managed multi-platform growth strategy across YouTube, Instagram, and LinkedIn.
+- Grew subscriber base by 8,000+ in six months; promoted to team lead within 6 months of joining.
+- Multi-platform campaign frameworks lifted brand awareness 20%.
+- Tools: Meta Ads, Google Analytics, Mailchimp
 
 ## Projects
 
@@ -56,31 +56,29 @@ The through-line: strategy that ships.
 - Client: Internal PwC engagements
 - Stack: React 18, SheetJS, PptxGenJS, Recharts
 - Impact: 4-6 hours of manual work eliminated per engagement
-- Summary: Browser tool that ingests capability scoring across 8 business domains (XLSX) and exports fully formatted, branded PowerPoint decks in one click. Used across multiple active client engagements.
-- GitHub: https://github.com/shreyanshmathur/enterprise-capability-generator
+- Summary: Browser tool that ingests capability scoring across 8 business domains (XLSX) and exports fully formatted, branded PowerPoint decks in one click.
 
 ### 02. AI Pharmacy Demand Forecasting Bot
 - Type: Healthcare AI
 - Client: Pharmacy chain
 - Stack: Python, pandas, Prophet, statsmodels, FastAPI, React
 - Impact: 60-day forecast horizon, ~85% accuracy on test set
-- Summary: Demand forecasting system with three modules — 7-60 day horizon forecasting (ARIMA + Prophet), expiry risk alerting, and ABC/XYZ inventory classification for purchase prioritisation.
 - GitHub: https://github.com/shreyanshmathur/surya-pharmacy-os
 
-### 03. Surya Hospital AI Suite
+### 03. Surya Hospital AI Coordination Layer
 - Type: Healthcare Automation
 - Client: Surya Hospital
-- Stack: React, FastAPI, Groq (Llama), python-telegram-bot, PostgreSQL
-- Impact: 3 POC modules delivered and demo-approved
-- Summary: Three-module POC suite: React approval dashboard for doctor scheduling with role-based access, Telegram bot for automated patient confirmations and FAQ responses, and an LLM content pipeline generating brand-voice posts from clinical briefs.
+- Stack: React, FastAPI, Groq (Llama), python-telegram-bot, PostgreSQL, WhatsApp Business API
+- Impact: 60-second doctor pre-brief with full patient history; 6 AI capabilities; zero auto-sent communications
+- Summary: Call intelligence, drop-off detection, patient records intelligence, WhatsApp community. AI proposes, human reviews, human sends. Human-first governance architecture.
 - GitHub: https://github.com/shreyanshmathur/SuryaPOC2
 
-### 04. SPACES AI Style Concierge
+### 04. SPACES AI Shopping Experience
 - Type: Retail AI
-- Client: SPACES (fashion retail)
+- Client: SPACES by Welspun (premium home textiles D2C)
 - Stack: JavaScript, FastAPI, Groq (Llama 3), React, Cloudinary
-- Impact: POC accepted for Phase 2; 3x avg. session time in internal testing
-- Summary: Chat-first AI styling assistant. Style intake, "complete the look" engine, room-scan mode (upload photo, get decor/textile recommendations), session memory across conversation.
+- Impact: 5 AI features deployed across full customer journey, discovery to post-purchase
+- Summary: Intent-aware discovery, AI colour harmony, style personalisation, room visualiser, post-purchase brand moments.
 - GitHub: https://github.com/shreyanshmathur/spaces-style-concierge
 
 ### 05. Learner Risk Copilot
@@ -88,16 +86,15 @@ The through-line: strategy that ships.
 - Client: EdTech platform
 - Stack: React, Groq AI, Netlify, Chart.js, Tailwind CSS
 - Impact: Live in production; 78% precision on historical refund data in backtesting
-- Summary: Refund-prevention dashboard. Scores learners across 5 engagement dimensions, surfaces at-risk learners with AI-generated personalised intervention suggestions for success teams.
 - GitHub: https://github.com/shreyanshmathur/learner-risk-copilot
 - Live: https://learner-risk-copilot.netlify.app
 
-### 06. BCC AI Pricing Engine
+### 06. Bombay Closet Cleanse AI Pricing Engine
 - Type: Retail AI
-- Client: BelleVidCo client (pre-loved fashion)
-- Stack: Groq Vision (LLaVA), FastAPI, HTML/CSS/JS, Netlify
-- Impact: Live in production; pricing time cut from 4 min to under 30 sec per item
-- Summary: Staff-facing tool for pricing pre-loved fashion. Upload a garment photo — Groq vision identifies brand, category, and condition, then returns a price range with confidence score and reasoning.
+- Client: Bombay Closet Cleanse (pre-loved fashion)
+- Stack: Groq Vision (LLaVA), FastAPI, HTML/CSS/JS, Netlify, Shopify API, WhatsApp Business API
+- Impact: ~5 seconds per item (from 4 minutes); 3,500+ units/month; zero manual pricing
+- Summary: Photo-to-price engine: AI analyses brand, condition, and rarity, scrapes live market comps from Depop/Vinted, syncs to Shopify. Self-improving override loop. WhatsApp seller intake bot.
 - GitHub: https://github.com/shreyanshmathur/bcc-pricing-poc
 
 ### 07. Baring Private Equity India Site
@@ -105,8 +102,28 @@ The through-line: strategy that ships.
 - Client: Baring Private Equity Partners India
 - Stack: HTML, CSS, JavaScript, Netlify
 - Impact: Live in production; sub-1s load time
-- Summary: Static corporate site with firm overview, investment strategy, team profiles, portfolio, and contact sections. Built for performance and zero-maintenance deployment.
 - GitHub: https://github.com/shreyanshmathur/baring-private-equity
+
+### 08. Robinsons Global Logistics AI Ops
+- Type: Ops Automation
+- Client: Robinsons Global Logistics (3PL warehousing, Bhiwandi)
+- Stack: Python, scikit-learn, FastAPI, React, PostgreSQL
+- Impact: ~35% pick travel reduced; 60%+ data visibility gained; deployed in 4 weeks
+- Summary: AI SKU placement engine using velocity data, smart CRM layer, real-time safety monitoring. Full on-site discovery before build. Three workstreams, one integrated outcome.
+
+### 09. Milestone Search Capital
+- Type: Corporate Website
+- Client: Milestone Search Capital (India-focused search fund)
+- Stack: React, Notion CRM, Webflow, Airtable, Zapier
+- Impact: 50+ intermediaries activated; 50%+ research time saved; 8-week full build
+- Summary: Institutional website, deal pipeline CRM, curated intermediary network, target research framework. Built to pass the Google test before the first conversation.
+
+### 10. Jakota Brand and AI Command Board
+- Type: Corporate Website
+- Client: Jakota (engineered formwork and scaffolds)
+- Stack: React, FastAPI, PostgreSQL, Recharts, Webflow
+- Impact: 1 unified command board; zero data silos; full digital presence rebuilt
+- Summary: Full website rebuild aligning presence to engineering authority. AI command board consolidating all operational data streams: project status, resources, equipment, financials.
 
 ## Skills and tools
 
@@ -121,7 +138,7 @@ The through-line: strategy that ships.
 
 - / — Home (hero, ticker strip with key metrics, highlights)
 - /#/experience — Full experience list with side-panel detail for each role
-- /#/projects — Project list with filter chips; links to individual case studies
+- /#/projects — 10 case studies with filter chips (Consulting Tool, Ops Automation, Healthcare AI, Healthcare Automation, Retail AI, EdTech AI, Corporate Website)
 - /#/projects/:slug — Case study detail (challenge, approach, outcomes, toolkit)
 - /#/about — Background, education, skills
 - /#/contact — Direct contact

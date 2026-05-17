@@ -4,7 +4,7 @@ import { useReveal } from '../hooks/useReveal'
 import { projects } from '../data/projects'
 import './Projects.css'
 
-const filters = ['All', 'Consulting Tool', 'Healthcare AI', 'Healthcare Automation', 'Retail AI', 'EdTech AI', 'Corporate Website']
+const filters = ['All', 'Consulting Tool', 'Ops Automation', 'Healthcare AI', 'Healthcare Automation', 'Retail AI', 'EdTech AI', 'Corporate Website']
 
 export default function Projects() {
   const [active, setActive] = useState('All')
@@ -22,7 +22,7 @@ export default function Projects() {
         <div className="container">
           <div className="ph-top">
             <span className="eyebrow">02 / Projects</span>
-            <span className="ph-meta">{projects.length} engagements</span>
+            <span className="ph-meta">{projects.length} case studies</span>
           </div>
           <h1 className="ph-title">Selected work.<br /><em>Quantified outcomes.</em></h1>
           <p className="ph-kicker">
