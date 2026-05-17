@@ -1,162 +1,145 @@
-# Shreyansh Mathur — Portfolio
+# Shreyansh Mathur
 
-> Strategy Associate at PwC India. Builder-consultant at the intersection of management consulting and software engineering. CS background. React / Python / AI stack.
+> Strategy Associate at PwC India. CS engineer who builds what he designs. Specialises in GCC operating model design, AI transformation, and enterprise tool development. Based in Mumbai, India.
 
-## Identity
+Shreyansh Mathur is a management consultant and software engineer currently working as an Associate in the Strategy practice at PwC India. He holds a B.Tech in Computer Science from VIT Vellore (2025) and has worked across PwC, EY, and his own consultancy BelleVidCo, delivering strategy engagements and AI-powered tools for enterprise clients across FMCG, cement, chemicals, logistics, fashion, healthcare, and PE advisory.
 
-- Name: Shreyansh Mathur
-- Current role: Associate, Strategy — PwC India (Aug 2025 – Present)
-- Location: India
+## Contact
+
 - Email: shreyanshmathur12@gmail.com
-- LinkedIn: https://linkedin.com/in/shreyanshmathur
+- LinkedIn: https://www.linkedin.com/in/shreyanshmathur
 - GitHub: https://github.com/shreyanshmathur
 - Portfolio: https://shreyanshportfolioconsultant.netlify.app
 
-## What I do
+## Current Role
 
-I sit at the crossroads of consulting and engineering. By day I run enterprise strategy engagements (GCC design, AI transformation programmes, IT operating model redesign). Outside of that I build the tools the engagements wish existed — forecasting bots, AI concierges, risk dashboards, pricing engines.
+**Associate, Strategy — PwC India** (Aug 2025 – Present)
 
-The through-line: strategy that ships.
-
-## Experience
-
-### PwC India — Associate, Strategy (Aug 2025 – Present)
-- Five-year India Tech Hub strategy for a global FMCG client: scaled 27 → 108 FTEs across 4 geographies; C-suite alignment across India, Singapore, and Dubai.
-- National AI Accelerator co-lead: 12 enterprise AI tools shipped; +15% tool adoption in 90 days; zero governance incidents.
-- IT operating model redesign for a national cement leader across 15+ states: 25% faster incident dispatch; unified reporting.
+- Five-year India Tech Hub strategy for a global FMCG client: scaled operating model from 27 → 108 FTEs across 4 geographies; C-suite alignment across India, Singapore, and Dubai
+- National AI Accelerator co-lead: 12 enterprise AI tools shipped; +15% adoption in 90 days; zero governance incidents
+- IT operating model redesign for a national cement leader across 15+ states: 25% faster incident dispatch; unified reporting
 - Tools: Power BI, Python, SAP FICO/MM, Excel VBA, Miro, Jira
 
-### PwC India — Advisory Intern (Jan – Aug 2025)
-- SAP FICO/MM optimisation for a major paint manufacturer: 500+ users trained; adoption target hit in 30 days post-go-live.
-- Built a real-time programme tracker (Power BI) for 15+ concurrent initiatives; zero delivery slippage.
-- Lean Six Sigma process mapping + VBA/Python automation: 20% cycle time reduction.
-- Tools: SAP FICO/MM, Power BI, Python, Excel VBA
+## Work Experience
 
-### EY — GCC Research Intern (Aug – Dec 2023)
-- Deployed an AI sales pipeline across 4 city offices (Bengaluru, Mumbai, Hyderabad, Delhi): 75% reduction in manual prospecting.
-- Built Tableau and Power BI dashboards for acquisition KPIs used by BD leadership.
-- GCC benchmarking research cited in Fortune 500 strategy decks.
-- Tools: Tableau, Power BI, Python, Excel
+**PwC India — Advisory Intern** (Jan – Aug 2025)
+- SAP FICO/MM optimisation for a major paint manufacturer: 500+ users trained; adoption target hit in 30 days post-go-live
+- Real-time programme tracker (Power BI) for 15+ concurrent initiatives; zero delivery slippage
+- Lean Six Sigma process mapping + VBA/Python automation: 20% cycle time reduction
 
-### BelleVidCo / MSC Consultancy — Co-founder and CEO (Feb 2023 – Dec 2024)
-- 12 client engagements across 8 sectors: 3PL logistics, private equity, healthcare, retail AI, events, fashion, fintech, construction.
-- 5× ROI on automation builds. 15+ clients served. 5-person specialist team.
-- Key engagements: Robinsons Global Logistics (AI warehouse ops, ~35% pick travel cut), Bombay Closet Cleanse (AI pricing engine, 3,500 units/month), SPACES by Welspun (5 AI features, full shopping journey), Surya Hospitals (AI coordination layer, human-first governance), Milestone Search Capital (PE deal infrastructure, 50+ intermediaries).
-- Tools: Python, scikit-learn, React, FastAPI, Groq, WhatsApp API, Shopify API, PostgreSQL
+**EY — GCC Research Intern** (Aug – Dec 2023)
+- Built and deployed an AI sales pipeline across 4 city offices (Bengaluru, Mumbai, Hyderabad, Delhi): 75% reduction in manual prospecting hours
+- Tableau and Power BI dashboards for acquisition KPIs used by BD leadership weekly
+- GCC benchmarking research cited in Fortune 500 client strategy decks
 
-### Social Eyes — Business Development Intern (Jun – Aug 2023)
-- 20% lift in lead conversion rate through targeted sales strategy implementation.
-- 10% market penetration increase via customer behaviour analysis in hospitality and fashion verticals.
+**BelleVidCo / MSC Consultancy — Co-founder and CEO** (Feb 2023 – Dec 2024)
+- 12 client engagements across 8 sectors: logistics, PE advisory, healthcare, retail AI, events, fashion, fintech, construction
+- 5× ROI on automation builds; 15+ clients served; 5-person specialist team
+- Key clients: Robinsons Global Logistics (AI warehouse ops, ~35% pick travel cut), Bombay Closet Cleanse (AI pricing engine, 3,500 garments/month), SPACES by Welspun (5 AI features across full shopping journey), Surya Hospitals (AI coordination layer, human-first governance), Milestone Search Capital (PE deal infrastructure, 50+ intermediaries activated)
 
-### Webminix — Business Development Intern (Mar – Apr 2022)
-- 20% monthly revenue increase through new sales opportunities.
-- 15% client acquisition boost via gym partnership channel.
-- Managed and cleaned a 5,000+ contact marketing database.
+**Social Eyes — Business Development Intern** (Jun – Aug 2023)
+- 20% lift in lead conversion rate through targeted sales strategy implementation
+- 10% market penetration increase via customer behaviour analysis in hospitality and fashion verticals
 
-### Recover Media — Marketing Team Lead (Aug 2020 – Jan 2023)
-- Grew subscriber base by 8,000+ in six months; promoted to team lead within 6 months of joining.
-- Multi-platform campaign frameworks lifted brand awareness 20%.
-- Tools: Meta Ads, Google Analytics, Mailchimp
+**Webminix — Business Development Intern** (Mar – Apr 2022)
+- 20% monthly revenue increase through new sales opportunities
+- 15% client acquisition boost via gym partnership channel
+- Managed and cleaned a 5,000+ contact marketing database; improved accuracy by 20%
 
-## Extracurricular Leadership (Campus)
+**Recover Media — Marketing Team Lead** (Aug 2020 – Jan 2023)
+- Grew subscriber base by 8,000+ in six months; promoted to team lead within 6 months
+- Multi-platform campaign frameworks lifted brand awareness by 20%
 
-### graVITas, VIT Vellore — Head of Corporate Relations (Aug – Sep 2024)
-- India's largest student-run tech fest; 100K+ participants.
-- Led a 35-person team; secured ₹75L+ in sponsorship (40% YoY increase).
-- Partners: Altium, Autodesk, Nestlé, EaseMyTrip.
-- 100% sponsor satisfaction; 80% expressed interest in returning partnerships.
+## Campus Leadership
 
-### Riviera, VIT University — Head of Corporate Relations (Jan – Mar 2024)
-- South India's largest cultural festival; 500+ colleges.
-- Closed ₹1.25Cr+ in sponsorship; Pepsi as title sponsor + 20+ brand partners.
-- 90% sponsor retention rate; redesigned coordination processes (35% faster turnaround).
+**graVITas, VIT Vellore — Head of Corporate Relations** (Aug – Sep 2024)
+- India's largest student-run tech fest with 100,000+ participants
+- Led a 35-person corporate relations team
+- Secured ₹75 lakh+ in sponsorship (40% increase year-on-year)
+- Partners: Altium, Autodesk, Nestlé, EaseMyTrip
+- 100% sponsor satisfaction; 80% interested in future partnerships
 
-### Dream Merchants, VIT — Core Team, Financial Mentor (Mar 2022 – Jan 2025)
-- VIT's premier entrepreneurship club.
-- Mentored 100+ student entrepreneurs on financial planning, valuation, and fundraising.
-- 25+ workshops and events; 500+ participants; 1,000+ students reached.
-- Built 15+ industry partnerships; grew club funding by 40%.
+**Riviera, VIT University — Head of Corporate Relations** (Jan – Mar 2024)
+- South India's largest cultural festival; 500+ colleges participating
+- Closed ₹1.25 crore+ in sponsorship
+- Secured Pepsi as title sponsor and 20+ additional national brand partners
+- 90% sponsor retention rate; redesigned coordination processes for 35% faster turnaround
+
+**Dream Merchants, VIT — Core Team, Financial Mentor** (Mar 2022 – Jan 2025)
+- VIT's premier entrepreneurship club
+- Mentored 100+ student entrepreneurs on financial planning, valuation, and fundraising strategy
+- Delivered 25+ workshops and events reaching 500+ participants; 1,000+ students reached through outreach
+- Built 15+ industry partnerships from scratch; grew club funding by 40%
 
 ## Projects
 
-### 01. Enterprise Capability Generator
-- Type: Consulting Tool
-- Client: Internal PwC engagements
+**01. Enterprise Capability Generator**
+- Type: Consulting Tool | Client: Internal PwC engagements
 - Stack: React 18, SheetJS, PptxGenJS, Recharts
-- Impact: 4-6 hours of manual work eliminated per engagement
-- Summary: Browser tool that ingests capability scoring across 8 business domains (XLSX) and exports fully formatted, branded PowerPoint decks in one click.
+- Impact: Eliminates 4–6 hours of manual work per engagement
+- Summary: Browser tool that ingests capability scoring across 8 business domains (XLSX) and exports fully formatted, branded PowerPoint decks in one click
 
-### 02. AI Pharmacy Demand Forecasting Bot
-- Type: Healthcare AI
-- Client: Pharmacy chain
+**02. AI Pharmacy Demand Forecasting Bot**
+- Type: Healthcare AI | Client: Pharmacy chain
 - Stack: Python, pandas, Prophet, statsmodels, FastAPI, React
-- Impact: 60-day forecast horizon, ~85% accuracy on test set
+- Impact: 60-day forecast horizon; ~85% accuracy on test set
 - GitHub: https://github.com/shreyanshmathur/surya-pharmacy-os
 
-### 03. Surya Hospital AI Coordination Layer
-- Type: Healthcare Automation
-- Client: Surya Hospital
+**03. Surya Hospital AI Coordination Layer**
+- Type: Healthcare Automation | Client: Surya Hospital
 - Stack: React, FastAPI, Groq (Llama), python-telegram-bot, PostgreSQL, WhatsApp Business API
-- Impact: 60-second doctor pre-brief with full patient history; 6 AI capabilities; zero auto-sent communications
-- Summary: Call intelligence, drop-off detection, patient records intelligence, WhatsApp community. AI proposes, human reviews, human sends. Human-first governance architecture.
+- Impact: 60-second doctor pre-brief with full patient history; 6 AI capabilities deployed; zero auto-sent communications
+- Summary: Call intelligence, drop-off detection, patient records intelligence, WhatsApp community pipeline. AI proposes, human reviews, human sends.
 - GitHub: https://github.com/shreyanshmathur/SuryaPOC2
 
-### 04. SPACES AI Shopping Experience
-- Type: Retail AI
-- Client: SPACES by Welspun (premium home textiles D2C)
+**04. SPACES AI Shopping Experience**
+- Type: Retail AI | Client: SPACES by Welspun (premium home textiles D2C)
 - Stack: JavaScript, FastAPI, Groq (Llama 3), React, Cloudinary
-- Impact: 5 AI features deployed across full customer journey, discovery to post-purchase
-- Summary: Intent-aware discovery, AI colour harmony, style personalisation, room visualiser, post-purchase brand moments.
+- Impact: 5 AI features deployed across full customer journey from discovery to post-purchase
 - GitHub: https://github.com/shreyanshmathur/spaces-style-concierge
 
-### 05. Learner Risk Copilot
-- Type: EdTech AI
-- Client: EdTech platform
+**05. Learner Risk Copilot**
+- Type: EdTech AI | Client: EdTech platform
 - Stack: React, Groq AI, Netlify, Chart.js, Tailwind CSS
 - Impact: Live in production; 78% precision on historical refund data in backtesting
 - GitHub: https://github.com/shreyanshmathur/learner-risk-copilot
 - Live: https://learner-risk-copilot.netlify.app
 
-### 06. Bombay Closet Cleanse AI Pricing Engine
-- Type: Retail AI
-- Client: Bombay Closet Cleanse (pre-loved fashion)
+**06. Bombay Closet Cleanse AI Pricing Engine**
+- Type: Retail AI | Client: Bombay Closet Cleanse (pre-loved fashion)
 - Stack: Groq Vision (LLaVA), FastAPI, HTML/CSS/JS, Netlify, Shopify API, WhatsApp Business API
-- Impact: ~5 seconds per item (from 4 minutes); 3,500+ units/month; zero manual pricing
-- Summary: Photo-to-price engine: AI analyses brand, condition, and rarity, scrapes live market comps from Depop/Vinted, syncs to Shopify. Self-improving override loop. WhatsApp seller intake bot.
+- Impact: ~5 seconds per item (from 4 minutes manual); 3,500+ units/month; zero manual pricing required
 - GitHub: https://github.com/shreyanshmathur/bcc-pricing-poc
 
-### 07. Baring Private Equity India Site
-- Type: Corporate Website
-- Client: Baring Private Equity Partners India
+**07. Baring Private Equity India Site**
+- Type: Corporate Website | Client: Baring Private Equity Partners India
 - Stack: HTML, CSS, JavaScript, Netlify
 - Impact: Live in production; sub-1s load time
 - GitHub: https://github.com/shreyanshmathur/baring-private-equity
 
-### 08. Robinsons Global Logistics AI Ops
-- Type: Ops Automation
-- Client: Robinsons Global Logistics (3PL warehousing, Bhiwandi)
+**08. Robinsons Global Logistics AI Ops**
+- Type: Ops Automation | Client: Robinsons Global Logistics (3PL warehousing, Bhiwandi)
 - Stack: Python, scikit-learn, FastAPI, React, PostgreSQL
 - Impact: ~35% pick travel reduced; 60%+ data visibility gained; deployed in 4 weeks
-- Summary: AI SKU placement engine using velocity data, smart CRM layer, real-time safety monitoring. Full on-site discovery before build. Three workstreams, one integrated outcome.
 
-### 09. Milestone Search Capital
-- Type: Corporate Website
-- Client: Milestone Search Capital (India-focused search fund)
+**09. Milestone Search Capital**
+- Type: Corporate Website | Client: Milestone Search Capital (India-focused search fund)
 - Stack: React, Notion CRM, Webflow, Airtable, Zapier
 - Impact: 50+ intermediaries activated; 50%+ research time saved; 8-week full build
-- Summary: Institutional website, deal pipeline CRM, curated intermediary network, target research framework. Built to pass the Google test before the first conversation.
 
-### 10. Jakota Brand and AI Command Board
-- Type: Corporate Website
-- Client: Jakota (engineered formwork and scaffolds)
+**10. Jakota Brand and AI Command Board**
+- Type: Corporate Website + Internal Tool | Client: Jakota (engineered formwork and scaffolds)
 - Stack: React, FastAPI, PostgreSQL, Recharts, Webflow
 - Impact: 1 unified command board; zero data silos; full digital presence rebuilt
-- Summary: Full website rebuild aligning presence to engineering authority. AI command board consolidating all operational data streams: project status, resources, equipment, financials.
+
+## Education
+
+**B.Tech, Computer Science — Vellore Institute of Technology** (2021 – 2025)
 
 ## Certifications
 
 - Anthropic — AI Fluency Framework & Foundations (Apr 2026)
-- Google — Generative AI Leader Certification (Dec 2025, expires Dec 2028)
+- Google — Generative AI Leader Certification (Dec 2025)
 - Emory University — Introduction to Management Consulting (Oct 2025)
 - Forage / Fidelity International — Investment Management Job Simulation (Aug 2024)
 - Forage / BCG — Strategy Consulting Job Simulation (Jul 2024)
@@ -168,26 +151,25 @@ The through-line: strategy that ships.
 - Coursera — Business Analysis & Process Management (Jul 2024)
 - Coursera — Investment Risk Management (Jul 2024)
 
-## Skills and tools
+## Core Skills
 
-- Strategy and consulting: GCC design, operating model, AI transformation, process improvement (Lean Six Sigma), programme management
-- Engineering: React 18, Python, FastAPI, Node.js, HTML/CSS/JS
-- AI/ML: Groq (Llama, LLaVA), Prophet, scikit-learn, ARIMA, LLM integrations
-- Data: Power BI, Tableau, pandas, PostgreSQL, Excel VBA
-- Enterprise systems: SAP FICO/MM
-- Deployment: Netlify, Vite, GitHub Actions
+**Strategy & Consulting:** GCC operating model design, market entry strategy, AI transformation, IT operating model redesign, process improvement (Lean Six Sigma), programme management, C-suite stakeholder management, KPI design and benchmarking
 
-## Site structure
+**Engineering:** React 18, Python, FastAPI, Node.js, HTML/CSS/JavaScript, TypeScript
 
-- / — Home (hero, ticker strip with key metrics, highlights)
-- /#/experience — Full experience list with side-panel detail for each role; teaser link to Activities
-- /#/projects — 10 case studies with filter chips (Consulting Tool, Ops Automation, Healthcare AI, Healthcare Automation, Retail AI, EdTech AI, Corporate Website)
-- /#/projects/:slug — Case study detail (challenge, approach, outcomes, toolkit)
-- /#/about — Background, story, capabilities, education; teaser link to Activities
-- /#/activities — Campus leadership (graVITas, Riviera, Dream Merchants) with side-panel detail drawers + 12 certifications grouped by category (University, Strategy & Consulting, Finance & Investment, AI & Technology)
-- /#/contact — Direct contact
+**AI & ML:** Groq (Llama, LLaVA), Prophet, scikit-learn, ARIMA/SARIMA, LLM integrations, prompt engineering
 
-## Contact
+**Data & Analytics:** Power BI, Tableau, pandas, PostgreSQL, Excel VBA, SQL
 
-For consulting enquiries, collaboration, or just to talk shop:
-Email: shreyanshmathur12@gmail.com
+**Enterprise Systems:** SAP FICO/MM (advanced user)
+
+**Deployment:** Netlify, Vite, GitHub Actions, Vercel
+
+## Site Pages
+
+- / — Home: hero, company logos, key metrics ticker, featured projects
+- /#/experience — Full 7-role experience timeline with slide-in detail panels for each engagement
+- /#/projects — 10 project case studies with category filters
+- /#/about — Background story, capabilities, education
+- /#/activities — Campus leadership (graVITas, Riviera, Dream Merchants) with detail panels + 12 certifications grouped by category
+- /#/contact — Contact form and direct links
