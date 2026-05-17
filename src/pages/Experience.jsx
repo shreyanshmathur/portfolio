@@ -360,6 +360,7 @@ export default function Experience() {
   const open = openIdx !== null ? experiences[openIdx] : null
 
   return (
+    <>
     <main className="page-wrap">
 
       {/* ── PAGE HERO ──────────────────────────── */}
@@ -452,82 +453,84 @@ export default function Experience() {
         </div>
       </section>
 
-      {/* ── BACKDROP ───────────────────────────── */}
-      <div
-        className={`exp-backdrop${openIdx !== null ? ' open' : ''}`}
-        onClick={() => setOpenIdx(null)}
-        aria-hidden="true"
-      />
+    </main>
 
-      {/* ── SIDE PANEL ─────────────────────────── */}
-      <aside
-        className={`exp-panel${openIdx !== null ? ' open' : ''}`}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Engagement detail"
-      >
-        {open && (
-          <div className="exp-panel-inner">
-            <div className="exp-panel-head">
-              <div className="exp-panel-title-block">
-                <div className="exp-panel-meta-row">
-                  <span>Role · {open.index}</span>
-                  <span>{open.type}</span>
-                </div>
-                <h2 className="exp-panel-role">{open.role}</h2>
-                <div className="exp-panel-firm">
-                  {logos[open.firm] && (
-                    <img
-                      className="exp-panel-logo"
-                      src={logos[open.firm]}
-                      alt={`${open.firm} logo`}
-                    />
-                  )}
-                  <span>{open.firm}</span>
-                  <span className="exp-panel-period">{open.period}</span>
-                </div>
+    {/* ── BACKDROP — outside page-wrap so CSS transform doesn't break position:fixed ── */}
+    <div
+      className={`exp-backdrop${openIdx !== null ? ' open' : ''}`}
+      onClick={() => setOpenIdx(null)}
+      aria-hidden="true"
+    />
+
+    {/* ── SIDE PANEL ─────────────────────────── */}
+    <aside
+      className={`exp-panel${openIdx !== null ? ' open' : ''}`}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Engagement detail"
+    >
+      {open && (
+        <div className="exp-panel-inner">
+          <div className="exp-panel-head">
+            <div className="exp-panel-title-block">
+              <div className="exp-panel-meta-row">
+                <span>Role · {open.index}</span>
+                <span>{open.type}</span>
               </div>
-              <button
-                className="exp-panel-close"
-                onClick={() => setOpenIdx(null)}
-                aria-label="Close panel"
-              >
-                ← Close
-              </button>
+              <h2 className="exp-panel-role">{open.role}</h2>
+              <div className="exp-panel-firm">
+                {logos[open.firm] && (
+                  <img
+                    className="exp-panel-logo"
+                    src={logos[open.firm]}
+                    alt={`${open.firm} logo`}
+                  />
+                )}
+                <span>{open.firm}</span>
+                <span className="exp-panel-period">{open.period}</span>
+              </div>
             </div>
+            <button
+              className="exp-panel-close"
+              onClick={() => setOpenIdx(null)}
+              aria-label="Close panel"
+            >
+              ← Close
+            </button>
+          </div>
 
-            <p className="exp-panel-context">{open.context}</p>
+          <p className="exp-panel-context">{open.context}</p>
 
-            <div>
-              <div className="exp-panel-section-label">Engagements</div>
-              <div className="exp-panel-engagements">
-                {open.engagements.map((eng, j) => (
-                  <article key={j} className="exp-panel-engagement">
-                    <span className="exp-panel-eng-num">0{j + 1}</span>
-                    <div className="exp-panel-eng-body">
-                      <h4 className="exp-panel-eng-title">{eng.title}</h4>
-                      <span className="exp-panel-eng-client">{eng.client}</span>
-                      <p className="exp-panel-eng-desc">{eng.description}</p>
-                      <div className="exp-panel-eng-outcome">
-                        <span className="exp-panel-eng-outcome-label">Outcome</span>
-                        <span className="exp-panel-eng-outcome-text">{eng.outcome}</span>
-                      </div>
+          <div>
+            <div className="exp-panel-section-label">Engagements</div>
+            <div className="exp-panel-engagements">
+              {open.engagements.map((eng, j) => (
+                <article key={j} className="exp-panel-engagement">
+                  <span className="exp-panel-eng-num">0{j + 1}</span>
+                  <div className="exp-panel-eng-body">
+                    <h4 className="exp-panel-eng-title">{eng.title}</h4>
+                    <span className="exp-panel-eng-client">{eng.client}</span>
+                    <p className="exp-panel-eng-desc">{eng.description}</p>
+                    <div className="exp-panel-eng-outcome">
+                      <span className="exp-panel-eng-outcome-label">Outcome</span>
+                      <span className="exp-panel-eng-outcome-text">{eng.outcome}</span>
                     </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-
-            <div className="exp-panel-tools">
-              <span className="exp-tools-label">Toolkit</span>
-              {open.tools.map(t => (
-                <span key={t} className="tag">{t}</span>
+                  </div>
+                </article>
               ))}
             </div>
           </div>
-        )}
-      </aside>
 
-    </main>
+          <div className="exp-panel-tools">
+            <span className="exp-tools-label">Toolkit</span>
+            {open.tools.map(t => (
+              <span key={t} className="tag">{t}</span>
+            ))}
+          </div>
+        </div>
+      )}
+    </aside>
+
+    </>
   )
 }
