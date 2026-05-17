@@ -9,6 +9,18 @@ const highlights = [
   { num: '4',        label: 'Industries served',  sub: 'FMCG · Chemicals · Cement · PE' },
 ]
 
+const tickerItems = [
+  { strong: '27 → 108 FTEs', tail: 'India Tech Hub' },
+  { strong: '+15% adoption', tail: 'AI Accelerator · 90 days' },
+  { strong: '25% faster',    tail: 'IT incident dispatch' },
+  { strong: '4 industries',  tail: 'FMCG · Chemicals · Cement · PE' },
+  { strong: '75% cut',       tail: 'Manual prospecting · EY' },
+  { strong: '35% cut',       tail: 'Pick-travel · ML SKU model' },
+  { strong: '78% precision', tail: 'Risk model · backtest' },
+  { strong: '500+ users',    tail: 'SAP FICO/MM training' },
+]
+const tickerLoop = [...tickerItems, ...tickerItems]
+
 const featured = [
   {
     index: '01',
@@ -66,8 +78,8 @@ export default function Home() {
               and the tools that prove the work.
             </p>
             <div className="hero-actions">
-              <Link to="/experience" className="btn-primary">View my work</Link>
-              <Link to="/contact" className="btn-ghost">Get in touch</Link>
+              <Link to="/projects" className="btn-primary">Selected work</Link>
+              <Link to="/contact" className="btn-ghost">Get in touch ↗</Link>
             </div>
           </div>
 
@@ -80,6 +92,19 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ── TICKER ───────────────────────────────── */}
+      <div className="ticker" aria-label="Selected results">
+        <div className="ticker-track">
+          {tickerLoop.map((t, i) => (
+            <span key={i} className="ticker-item">
+              <strong>{t.strong}</strong>
+              <span>{t.tail}</span>
+              <span className="ticker-sep">/</span>
+            </span>
+          ))}
+        </div>
+      </div>
 
       {/* ── HIGHLIGHTS ───────────────────────────── */}
       <div className="highlights">
@@ -122,13 +147,13 @@ export default function Home() {
                   <div className="feat-metric-num">{f.metricNum}</div>
                   <span className="feat-metric-label">{f.metricLabel}</span>
                 </div>
-                <span className="feat-arrow">&#8594;</span>
+                <span className="feat-arrow">→</span>
               </Link>
             ))}
           </div>
 
           <div className="feat-footer reveal d4">
-            <Link to="/experience" className="btn-ghost">Full experience ↗</Link>
+            <Link to="/projects" className="btn-ghost">Full project library ↗</Link>
           </div>
         </div>
       </section>

@@ -15,126 +15,123 @@ export default function ProjectDetail() {
   return (
     <main className="page-wrap">
 
-      {/* ── CASE STUDY HERO ────────────────────── */}
-      <div className="cs-hero">
+      {/* ── CASE HERO ──────────────────────────── */}
+      <div className="case-hero">
         <div className="container">
-          <div className="cs-hero-top">
-            <span className="eyebrow">{project.index} / {project.kind}</span>
-            <Link to="/projects" className="cs-back">← All projects</Link>
+          <Link to="/projects" className="case-back">← Back to projects</Link>
+          <div className="case-meta-row">
+            <span>Case · {project.index}</span>
+            <span>{project.kind}</span>
           </div>
-          <h1 className="cs-title">{project.title}</h1>
-          <div className="cs-hero-meta">
-            <div className="cs-meta-item">
-              <span className="cs-meta-k">Client</span>
-              <span className="cs-meta-v">{project.client}</span>
-            </div>
-            <div className="cs-meta-item">
-              <span className="cs-meta-k">Type</span>
-              <span className="cs-meta-v">{project.kind}</span>
-            </div>
-            <div className="cs-meta-item cs-meta-impact">
-              <span className="cs-impact-num">{project.impact}</span>
-              <span className="cs-impact-label">{project.impactLabel}</span>
-            </div>
-          </div>
+          <h1 className="case-title">{project.title}</h1>
+          <p className="case-kicker">{project.overview}</p>
         </div>
       </div>
 
-      {/* ── OVERVIEW ───────────────────────────── */}
-      <section className="section cs-overview">
+      {/* ── METADATA STRIPE ────────────────────── */}
+      <div className="case-stripe">
+        <div className="case-stripe-item">
+          <div className="case-stripe-label">Client</div>
+          <div className="case-stripe-value">{project.client}</div>
+        </div>
+        <div className="case-stripe-item">
+          <div className="case-stripe-label">Type</div>
+          <div className="case-stripe-value">{project.kind}</div>
+        </div>
+        <div className="case-stripe-item">
+          <div className="case-stripe-label">Stack</div>
+          <div className="case-stripe-value">{project.stack.slice(0, 2).join(', ')}</div>
+        </div>
+        <div className="case-stripe-item">
+          <div className="case-stripe-label">{project.impactLabel || 'Impact'}</div>
+          <div className="case-stripe-value case-stripe-impact">{project.impact}</div>
+        </div>
+      </div>
+
+      {/* ── CASE BODY ──────────────────────────── */}
+      <div className="case-body">
         <div className="container">
-          <div className="cs-two-col">
-            <div>
-              <span className="eyebrow">Overview</span>
-              <p className="cs-overview-text">{project.overview}</p>
+
+          {/* 01 / Challenge */}
+          <div className="case-section">
+            <div className="case-section-label">01 / Challenge</div>
+            <div className="case-section-body">
+              <h2 className="case-section-heading">The brief, and what made it hard.</h2>
+              <p>{project.problem}</p>
             </div>
-            <div className="cs-tags-col">
-              <span className="cs-col-label">Stack</span>
-              <div className="cs-stack-list">
+          </div>
+
+          {/* 02 / Approach */}
+          <div className="case-section">
+            <div className="case-section-label">02 / Approach</div>
+            <div className="case-section-body">
+              <h2 className="case-section-heading">How it was built and structured.</h2>
+              <p>{project.solution}</p>
+              {project.features && project.features.length > 0 && (
+                <ul className="case-features">
+                  {project.features.map((f, i) => <li key={i}>{f}</li>)}
+                </ul>
+              )}
+            </div>
+          </div>
+
+          {/* 03 / Outcome */}
+          <div className="case-section">
+            <div className="case-section-label">03 / Outcome</div>
+            <div className="case-section-body">
+              <h2 className="case-section-heading">What landed, and how it was measured.</h2>
+              <div className="case-outcomes">
+                {project.outcomes.map((o, i) => (
+                  <div key={i} className="case-outcome">
+                    <div className="case-outcome-text">{o}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* 04 / Toolkit */}
+          <div className="case-section">
+            <div className="case-section-label">04 / Toolkit</div>
+            <div className="case-section-body">
+              <h2 className="case-section-heading">Frameworks and instruments deployed.</h2>
+              <div className="case-stack">
                 {project.stack.map(s => <span key={s} className="tag">{s}</span>)}
               </div>
-              {project.github && (
-                <a href={project.github} target="_blank" rel="noreferrer" className="cs-link">
-                  GitHub ↗
-                </a>
+              {(project.github || project.live) && (
+                <div className="case-links">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noreferrer" className="btn-ghost">
+                      GitHub ↗
+                    </a>
+                  )}
+                  {project.live && (
+                    <a href={project.live} target="_blank" rel="noreferrer" className="btn-primary">
+                      Live site ↗
+                    </a>
+                  )}
+                </div>
               )}
-              {project.live && (
-                <a href={project.live} target="_blank" rel="noreferrer" className="cs-link cs-link--accent">
-                  Live site ↗
-                </a>
-              )}
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ── PROBLEM / SOLUTION ─────────────────── */}
-      <section className="section band">
-        <div className="container">
-          <div className="cs-ps-grid">
-            <div className="cs-ps-col">
-              <span className="cs-ps-label">The problem</span>
-              <p className="cs-ps-text">{project.problem}</p>
-            </div>
-            <div className="cs-ps-divider" />
-            <div className="cs-ps-col">
-              <span className="cs-ps-label">The solution</span>
-              <p className="cs-ps-text">{project.solution}</p>
-            </div>
-          </div>
         </div>
-      </section>
-
-      {/* ── FEATURES ───────────────────────────── */}
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">What was built</span>
-            <h2>Key features</h2>
-          </div>
-          <div className="cs-features">
-            {project.features.map((f, i) => (
-              <div key={i} className="cs-feature">
-                <span className="cs-feature-num">0{i + 1}</span>
-                <p className="cs-feature-text">{f}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── OUTCOMES ───────────────────────────── */}
-      <section className="section band">
-        <div className="container">
-          <div className="section-head">
-            <span className="eyebrow">Results</span>
-            <h2>Outcomes</h2>
-          </div>
-          <div className="cs-outcomes">
-            {project.outcomes.map((o, i) => (
-              <div key={i} className="cs-outcome">
-                <span className="cs-outcome-num">{String(i + 1).padStart(2, '0')}</span>
-                <p className="cs-outcome-text">{o}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      </div>
 
       {/* ── PREV / NEXT ────────────────────────── */}
-      <div className="cs-nav">
+      <div className="case-nav">
         <div className="container">
-          <div className="cs-nav-inner">
+          <div className="case-nav-inner">
             {prev ? (
-              <Link to={`/projects/${prev.slug}`} className="cs-nav-link cs-nav-prev">
-                <span className="cs-nav-dir">← Previous</span>
-                <span className="cs-nav-title">{prev.title}</span>
+              <Link to={`/projects/${prev.slug}`} className="case-nav-link">
+                <span className="case-nav-dir">← Previous</span>
+                <span className="case-nav-title">{prev.title}</span>
               </Link>
             ) : <span />}
             {next ? (
-              <Link to={`/projects/${next.slug}`} className="cs-nav-link cs-nav-next">
-                <span className="cs-nav-dir">Next →</span>
-                <span className="cs-nav-title">{next.title}</span>
+              <Link to={`/projects/${next.slug}`} className="case-nav-link case-nav-next">
+                <span className="case-nav-dir">Next →</span>
+                <span className="case-nav-title">{next.title}</span>
               </Link>
             ) : <span />}
           </div>

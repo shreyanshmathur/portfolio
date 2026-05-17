@@ -2,13 +2,13 @@
 
 :root {
   /* ── PAPER (backgrounds) ─────────────────────── */
-  --paper:        #FFFFFF;
-  --paper-2:      #FAFBFC;
-  --paper-3:      #F4F5F7;
-  --paper-4:      #E9EBEF;
+  --paper:        #FAFAF7;
+  --paper-2:      #F4F2EC;
+  --paper-3:      #EFEDE5;
+  --paper-4:      #E5E2D8;
 
   /* ── INK (text + dark surfaces) ──────────────── */
-  --ink:          #0F1B2D;
+  --ink:          #0E1626;
   --ink-2:        #2A3441;
   --ink-3:        #4E5663;
   --ink-4:        #7C8290;
@@ -18,10 +18,12 @@
   --accent:       #1F4E5F;
   --accent-2:     #2C6A7E;
   --accent-3:     #B89B66;
+  --accent-quiet: #DCE5E7;
 
   /* ── LINES ───────────────────────────────────── */
-  --line:         #E5E7EB;
-  --line-2:       #CFD3DA;
+  --line:         #E2DFD6;
+  --line-2:       #CFCBBF;
+  --line-dark:    rgba(255,255,255,0.12);
 
   /* ── SEMANTIC ────────────────────────────────── */
   --bg:           var(--paper);
@@ -33,6 +35,8 @@
   --fg-muted:     var(--ink-4);
   --fg-on-dark:   #FFFFFF;
   --fg-on-dark-2: #B8BCC4;
+  --rule:         var(--line);
+  --rule-strong:  var(--line-2);
 
   /* ── TYPE ────────────────────────────────────── */
   --serif:  'Instrument Serif', Georgia, serif;
