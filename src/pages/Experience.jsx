@@ -7,6 +7,8 @@ const logos = {
   'EY':             '/logos/ey.png',
   'BelleVidCo':     '/logos/bellevidco.png',
   'Recover Media':  '/logos/recover-media.png',
+  'Webminix':       '/logos/webminix.png',
+  'Social Eyes':    '/logos/social-eyes.png',
 }
 
 const experiences = [
