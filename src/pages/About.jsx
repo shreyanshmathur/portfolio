@@ -54,8 +54,8 @@ const certifications = [
   { org: 'Yale University',  title: 'Financial Markets — with Honors',                date: 'Jul 2024',  logo: '/logos/yale.png' },
   { org: '365 Careers',      title: 'Complete Investment Banking Course 2024',        date: 'Jul 2024',  logo: '/logos/365-careers.png' },
   { org: '365 Careers',      title: 'Financial Modeling: DCF Valuation Model',       date: 'Jul 2024',  logo: '/logos/365-careers.png' },
-  { org: 'Coursera',         title: 'Business Analysis & Process Management',         date: 'Jul 2024',  logo: null },
-  { org: 'Coursera',         title: 'Investment Risk Management',                     date: 'Jul 2024',  logo: null },
+  { org: 'Coursera',         title: 'Business Analysis & Process Management',         date: 'Jul 2024',  logo: '/logos/coursera.png' },
+  { org: 'Coursera',         title: 'Investment Risk Management',                     date: 'Jul 2024',  logo: '/logos/coursera.png' },
 ]
 
 export default function About() {
