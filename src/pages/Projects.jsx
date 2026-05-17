@@ -12,7 +12,7 @@ export default function Projects() {
 
   const items = active === 'All'
     ? projects
-    : projects.filter(p => p.kind.toLowerCase() === active.toLowerCase())
+    : projects.filter(p => p.kind === active)
 
   return (
     <main className="page-wrap">
