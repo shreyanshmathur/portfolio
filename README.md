@@ -2,7 +2,7 @@
 
 Personal portfolio website for Shreyansh Mathur, Strategy Associate at PwC India. Built to target consulting roles across strategy, AI transformation, and GCC operating model design.
 
-**Live site:** [shreyanshmathur.netlify.app](https://shreyanshmathur.netlify.app) *(deploy via Netlify)*
+**Live site:** [shreyanshportfolioconsultant.netlify.app](https://shreyanshportfolioconsultant.netlify.app) *(deploy via Netlify)*
 
 ---
 
@@ -21,7 +21,7 @@ Personal portfolio website for Shreyansh Mathur, Strategy Associate at PwC India
 | `/about` | About — story, headshot, dual identity, certifications |
 | `/experience` | Experience — 5-role timeline with metrics |
 | `/projects` | Projects — 7 consulting tools and client deliverables |
-| `/skills` | Skills — 4 competency areas with animated bars |
+| `/skills` | Redirects to `/about` (kept for old links) |
 | `/contact` | Contact — channels, form, availability |
 
 ## Design
@@ -29,7 +29,7 @@ Personal portfolio website for Shreyansh Mathur, Strategy Associate at PwC India
 - Dark editorial palette (`#05050C` base, `#C9943A` gold)
 - Ghost watermark typography on every page hero
 - Intersection Observer scroll-reveal animations
-- Animated skill bars, horizontal marquee tickers, asymmetric card grids
+- Horizontal marquee tickers, asymmetric card grids
 - Fully responsive down to 375px
 
 ## Local Development
