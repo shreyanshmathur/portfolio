@@ -4,10 +4,8 @@ import './Navbar.css'
 
 const links = [
   { num: '01', to: '/experience',  label: 'Experience' },
-  { num: '02', to: '/projects',    label: 'Projects' },
-  { num: '03', to: '/about',       label: 'About' },
-  { num: '04', to: '/activities',  label: 'Activities' },
-  { num: '05', to: '/contact',     label: 'Contact' },
+  { num: '02', to: '/about',       label: 'About' },
+  { num: '03', to: '/contact',     label: 'Contact' },
 ]
 
 export default function Navbar() {
@@ -22,7 +20,7 @@ export default function Navbar() {
 
         <NavLink to="/" className="nav-brand">
           <span className="nav-brand-name">Shreyansh <em>Mathur</em></span>
-          <span className="nav-brand-role">Strategy · PwC India</span>
+          <span className="nav-brand-role">Strategy · Delivery</span>
         </NavLink>
 
         <nav className="nav-links">

@@ -4,3 +4,5 @@ dist
 *.local
 .claude/
 *_analysis.md
+
+dist-ssr
