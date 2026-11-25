@@ -1,188 +1,129 @@
 import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
+import { useInView, CountUp } from '../hooks/motion'
+import { profile, education, certifications, skills, companies } from '../data/content'
+import { Orbit, Parallax, LogoMarquee } from '../components/Graphics'
+import './Home.css'
+import './Experience.css'
 import './About.css'
 
-const facts = [
-  ['Role',       'Associate, Strategy'],
-  ['Firm',       'PwC India'],
-  ['Based',      'Mumbai, India'],
-  ['Education',  'B.Tech CS, VIT (2025)'],
-  ['Focus',      'GCC · AI · Operating models'],
-  ['Status',     'Open to opportunities'],
-]
-
-const capabilities = [
+const uni = [
   {
-    heading: 'Strategy',
-    items: [
-      'GCC operating model design',
-      'Market entry and capability mapping',
-      'AI transformation strategy',
-      'IT operating model redesign',
-      'C-suite stakeholder management',
-    ],
+    org: 'Riviera, VIT', role: 'Sponsorship Coordinator', period: 'Jan 2024 – Mar 2024',
+    metrics: [{ to: 1.25, decimals: 2, prefix: '₹', suffix: ' Cr+', label: 'budgets managed' }, { to: 250, label: 'events' }],
+    text: 'Analysed sponsorship proposals and secured Pepsi as title sponsor.',
   },
   {
-    heading: 'Delivery',
-    items: [
-      'Lean Six Sigma process design',
-      'Agile programme management',
-      'KPI design and benchmarking',
-      'Power BI / Tableau dashboards',
-      'Financial modelling (DCF, valuation)',
-    ],
-  },
-  {
-    heading: 'Technical',
-    items: [
-      'Python: automation, ML, pipelines',
-      'React / TypeScript prototypes',
-      'LLM integration (Groq, OpenAI)',
-      'SAP FICO/MM advanced user',
-      'SQL, Excel VBA workflows',
-    ],
+    org: 'graVITas, VIT', role: 'Finance & Sponsorship Manager', period: 'Aug 2024 – Sep 2024',
+    metrics: [{ to: 75, prefix: '₹', suffix: 'L+', label: 'sponsorship deals negotiated' }],
+    text: 'Deals with Altium, Autodesk, Nestlé and EaseMyTrip, built on data-driven sponsor insights.',
   },
 ]
 
+function UniCard({ x, i }) {
+  const [ref, go] = useInView(0.35)
+  return (
+    <article ref={ref} className={`ab-x${go ? ' go' : ''}`} style={{ '--i': i }}>
+      <span className="mono">{x.period}</span>
+      <h3>{x.org}</h3>
+      <div className="role">{x.role}</div>
+      <div className="ab-x-metrics">
+        {x.metrics.map((m) => (
+          <div key={m.label}>
+            <span className="n"><CountUp to={m.to} start={go} decimals={m.decimals || 0} prefix={m.prefix} suffix={m.suffix} duration={1500} /></span>
+            <span className="l">{m.label}</span>
+          </div>
+        ))}
+      </div>
+      <p>{x.text}</p>
+    </article>
+  )
+}
 
 export default function About() {
   const r1 = useReveal()
   const r2 = useReveal()
   const r3 = useReveal()
-  // r3 used for education section
+  const [skRef, skGo] = useInView(0.25)
 
   return (
     <main className="page-wrap">
-
-      {/* ── ABOUT HERO ─────────────────────────── */}
-      <div className="about-hero">
-        <div className="container">
-          <div className="ah-grid">
-            <div className="ah-portrait-col">
-              <div className="ah-portrait">
-                <img src="/shreyansh.jpg" alt="Shreyansh Mathur" />
-              </div>
-              <div className="ah-portrait-meta">
-                <span className="ah-pm-loc">Mumbai, India</span>
-                <span className="ah-pm-loc">PwC India</span>
-              </div>
-            </div>
-            <div className="ah-text">
-              <div className="ah-top">
-                <span className="eyebrow">03 / About</span>
-              </div>
-              <h1 className="ah-title">
-                The strategist<br />
-                <em>who builds.</em>
-              </h1>
-              <p className="ah-kicker">
-                Management consultant at PwC with a CS background. Operating models,
-                AI transformations, and the prototypes that prove the work.
-              </p>
-              <div className="ah-quick">
-                {facts.slice(0, 3).map(([k, v]) => (
-                  <div key={k}>
-                    <span className="ah-q-k">{k}</span>
-                    <span className="ah-q-v">{v}</span>
-                  </div>
-                ))}
-              </div>
+      <div className="page-hero ab-hero-wrap">
+        <Parallax speed={-120} className="xp-hero-orbit"><Orbit /></Parallax>
+        <div className="container ab-hero">
+          <div>
+            <div className="ph-top"><span className="eyebrow load d1">02 / About</span></div>
+            <h1 className="ph-title"><span className="line"><span className="load d2">About</span></span></h1>
+            <p className="ph-kicker load d3">
+              I studied computer science at VIT and co-founded a digital agency while I
+              was there. I then moved into strategy consulting at PwC, and went on to lead
+              enterprise delivery at TrueFan AI. I am based in {profile.location}.
+            </p>
+            <div className="ab-actions load d4">
+              <Link to="/experience" className="btn-primary">Experience <span className="arr">→</span></Link>
+              <Link to="/contact" className="btn-ghost">Contact</Link>
             </div>
           </div>
+          <Parallax speed={50} className="ab-photo-wrap load-img">
+            <div className="hp-frame sq"><img src="/shreyansh.jpg" alt="Shreyansh Mathur" width="800" height="800" /></div>
+          </Parallax>
         </div>
       </div>
 
-      {/* ── STORY ──────────────────────────────── */}
       <section className="section" ref={r1}>
         <div className="container">
           <div className="section-head">
-            <div className="reveal">
-              <span className="eyebrow">My story</span>
-            </div>
-            <h2 className="reveal d2">From GCC strategy<br /><em>to ground-level delivery.</em></h2>
+            <span className="eyebrow reveal">Capabilities</span>
+            <h2 className="sec-title reveal d1">Strategy, delivery <em>and data.</em></h2>
           </div>
-          <div className="about-grid">
-            <div className="about-prose reveal d2">
-              <p>
-                Computer Science at VIT, but I was always more interested in how organisations
-                work than how code runs. That curiosity moved me into EY's GCC Research team,
-                where I shipped an AI sales pipeline that cut manual prospecting by 75%
-                across four city offices.
-              </p>
-              <p>
-                I co-founded BelleVidCo, running end-to-end engagements for clients in
-                logistics, fashion, and PE advisory. That taught me what slides alone cannot:
-                strategy is only as good as the implementation behind it.
-              </p>
-              <p>
-                At PwC I lead GCC strategy for a global FMCG client, redesign IT operating
-                models for national cement, co-lead a national AI Accelerator, and ship
-                the prototypes that prove every recommendation.
-              </p>
-            </div>
-            <div className="about-facts reveal d3">
-              {facts.map(([k, v]) => (
-                <div key={k} className="about-fact">
-                  <span className="k">{k}</span>
-                  <span className="v">{v}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CAPABILITIES ───────────────────────── */}
-      <section className="section band" ref={r2}>
-        <div className="container">
-          <div className="section-head">
-            <div className="reveal">
-              <span className="eyebrow">Capabilities</span>
-            </div>
-            <h2 className="reveal d2">Consulting depth.<br /><em>Technical credibility.</em></h2>
-          </div>
-          <div className="cap-grid">
-            {capabilities.map((c, i) => (
-              <div key={i} className={`cap-col reveal d${i + 2}`}>
-                <h3 className="cap-heading">{c.heading}</h3>
-                <ul className="cap-list">
-                  {c.items.map((item, j) => <li key={j}>{item}</li>)}
-                </ul>
+          <div ref={skRef} className={`ab-skills${skGo ? ' go' : ''}`}>
+            {skills.map((g, i) => (
+              <div key={g.group} className="ab-skill" style={{ '--i': i }}>
+                <span className="ab-skill-n">0{i + 1}</span>
+                <h3>{g.group}</h3>
+                <ul>{g.items.map((s, j) => <li key={s} style={{ '--j': j }}>{s}</li>)}</ul>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── EDUCATION ──────────────────────────── */}
-      <section className="section" ref={r3}>
-        <div className="container">
-          <div className="section-head">
-            <div className="reveal">
-              <span className="eyebrow">Education</span>
+      <section className="section band" ref={r2}>
+        <div className="container ab-two">
+          <div>
+            <span className="eyebrow reveal">Education</span>
+            <div className="ab-edu reveal d1">
+              <h3>{education.school}</h3>
+              <p>{education.degree}</p>
+              <span className="mono">{education.period}</span>
+              <div className="ab-edu-bar" aria-hidden="true"><span /></div>
             </div>
-            <h2 className="reveal d2">Where it<br /><em>started.</em></h2>
           </div>
-
-          <div className="edu-row reveal d2">
-            <div>
-              <h3>Bachelor of Technology, Computer Science</h3>
-              <p style={{ marginTop: 8, color: 'var(--ink-4)', fontFamily: 'var(--mono)', fontSize: 13 }}>
-                Vellore Institute of Technology
-              </p>
-            </div>
-            <div className="years">2021<br /><em>2025</em></div>
-          </div>
-
-          <div className="about-teaser reveal d3">
-            <span className="about-teaser-label">12 certifications across AI, consulting, and finance</span>
-            <Link to="/activities" className="about-teaser-link">
-              See all credentials →
-            </Link>
+          <div>
+            <span className="eyebrow reveal">Certifications</span>
+            <ul className="ab-certs">
+              {certifications.map((c, i) => <li key={c} className={`reveal d${Math.min(i + 1, 5)}`}>{c}</li>)}
+            </ul>
           </div>
         </div>
       </section>
 
+      <section className="section" ref={r3}>
+        <div className="container">
+          <div className="section-head">
+            <span className="eyebrow reveal">At university</span>
+            <h2 className="sec-title reveal d1">Sponsorship and <em>finance.</em></h2>
+          </div>
+          <div className="ab-extra">
+            {uni.map((x, i) => <UniCard key={x.org} x={x} i={i} />)}
+          </div>
+        </div>
+      </section>
+
+      <section className="section band ab-logos">
+        <div className="container"><span className="eyebrow">Organisations</span></div>
+        <div className="ab-logo-row"><LogoMarquee items={companies} speed={30} /></div>
+      </section>
     </main>
   )
 }
